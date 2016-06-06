@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>常见问题</title>
+    <link rel="stylesheet" href="./assets/custom.css">
+    <link rel="stylesheet" href="./assets/faq.css">
+</head>
+
+<body>
+    <div class="faq-page">
+        <nav id="nav-header" class="nav-bar nav-bar-white">
+            <div class="nav-bar-inner">
+                <div class="nav-bar-logo"><img src="./assets/images/logo.svg" alt="logo" /></div>
+                <ul class="nav-bar-tab nav-bar-tab-opposite">
+                    <li class="tab-item-small"><a href="../dist/index.html">首页</a></li>
+                    <li class="tab-item-big"><a href="../dist/about_vks.html">关于万物仓</a></li>
+                    <li><a href="../dist/faq.html">常见问题</a><span class="item-bottom-line item-bottom-line-opposite"></span></li>
+                    <li><a href="../dist/about_us.html">关于我们</a><span></span></li>
+                    <li class="nav-bar-line nav-bar-line-opposite"></li>
+                    <li class="tab-item-big"><img class="nav-bar-phone" src="./assets/images/phone.svg" alt="电话"></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="section-faq">
+            <img src="./assets/images/faq.png" alt="常见问题" />
+            <div class="section-faq-inner">
+                <div class="line-about" style="margin-top:20px;" onclick="checkItem(1)">
+                    <div class="line-about-numb">1</div>
+                    <div class="arrow-left"></div>
+                    <div class="line-about-title">关于产品</div>
+                    <div class="line-about-footer">
+                        <img id="product-img" src="./assets/images/xialajiantou.png" />
+                        <img id="product-img-per" style="display:none" src="./assets/images/xialajiantou_per.png" />
+                    </div>
+                </div>
+                <div id="about-product" class="line-about-info">
+                    <h3>什么是自存仓</h3>
+                    <p>自存仓是自助式储存物件的仓库，又因尺寸小于传统仓库，又名：“迷你仓”。生活中对空间需求逐渐增大，针对闲置物品，有价值或有纪念意义的物品进行存储。</p>
+                    </br>
+                    <h3>关于万物仓</h3>
+                    <p>万物仓公司成立于2011年，是国内领先的社区自存仓公司，公司致力于满足用户多样存储需求，成为社区生活专家，为个人、家庭、公司开创私人存储空间，成为中国具有竞争力的社区收纳系统解决方案提供商。万物仓结合IT技术微信开锁，24小时随存随取，给您提供全方位便捷 、安全的存储体验。</p>
+                </div>
+
+                <div class="line-about" onclick="checkItem(2)">
+                    <div class="line-about-numb">2</div>
+                    <div class="arrow-left"></div>
+                    <div class="line-about-title">关于订单</div>
+                    <div class="line-about-footer">
+                        <img id="order-img" src="./assets/images/xialajiantou.png" />
+                        <img id="order-img-per" style="display:none" src="./assets/images/xialajiantou_per.png" />
+                    </div>
+                </div>
+                <div id="about-order" class="line-about-info">
+                    <h3>怎样进行仓位预订</h3>
+                    <p>
+                        仓位预订有两种方式：</br>(1) 可通过客服热线进行电话预订400-888-9192，</br>(2) 通过微信公众号进行登录注册，系统会自动定位到您所在的地理位置，然后选择您所需要的门店，进行仓位选择，轻松预订您想要的仓位。
+                    </p>
+                    </br>
+                    <h3>都有哪些支付方式</h3>
+                    <p>
+                        下单支付可通过微信支付或到店支付。到店支付可进行pos机刷银行卡进行支付。
+                    </p>
+                </div>
+                <div class="line-about" onclick="checkItem(3)">
+                    <div class="line-about-numb">3</div>
+                    <div class="arrow-left"></div>
+                    <div class="line-about-title">关于安全</div>
+                    <div class="line-about-footer">
+                        <img id="safety-img" src="./assets/images/xialajiantou.png" />
+                        <img id="safety-img-per" style="display:none" src="./assets/images/xialajiantou_per.png" />
+                    </div>
+                </div>
+                <div id="about-safety" class="line-about-info">
+                    <h3>物品存在万物仓安全吗？</h3>
+                    <p>万物仓为仓体设置了24小时全方位密闭式的摄像监控系统，通过微信进行开仓开锁，无需担心钥匙和卡的丢失。</p>
+                    </br>
+                    <h3>物品放在万物仓干净卫生吗？</h3>
+                    <p>万物仓仓体提供全方位服务，定时巡仓，精致保洁。同时仓体内恒温恒湿，提供一个干净，整洁的仓储空间。</p>
+                    </br>
+                    <h3>哪些物品不能存放放？</h3>
+                    <p>易燃、易爆、易渗漏、易挥发、易潮解物品；有毒有害、有辐射、化学性、突变性危险品；易腐烂、易霉变、易变质及超限等特殊物品；国家相关法律明令禁止的毒品、枪支弹药等违禁违纪类物品是不能存放的。</p>
+                </div>
+                <div class="line-about" onclick="checkItem(4)">
+                    <div class="line-about-numb">4</div>
+                    <div class="arrow-left"></div>
+                    <div class="line-about-title">关于售后</div>
+                    <div class="line-about-footer">
+                        <img id="refund-img" src="./assets/images/xialajiantou.png" />
+                        <img id="refund-img-per" style="display:none" src="./assets/images/xialajiantou_per.png" />
+                    </div>
+                </div>
+                <div id="about-refund" class="line-about-info">
+                    <h3>怎样进行退仓／退款？</h3>
+                    <p>仓位到期可在微信公众号可进行退仓。</br>
+                        如您是微信支付 我们将为您的钱款退还到您微信账户中，我们的服务人员将在24小时（节假日除外）内为您办理退款审核，退款周期一般将在72小时之内完成（节假日除外）。
+                        </br>
+                        如您是现金或pos机支付 我们将根据您提出退款申请时提供的银行帐号为您进行转账退款，我们的客服人员将在24小时内为您办理退款审核，退款周期一般将在72小时之内完成（节假日除外）。
+                    </p>
+                    </br>
+                    <h3>仓位逾期怎么办？</h3>
+                    <p>逾期的仓位万物仓门店管理人员会在7天内给您电话联系，您可选择续租或退仓。</br>
+                        如您选择续租，可在微信公众号进行续租下单。</br>
+                        如您选择退仓，可在微信公众号选择退仓，逾期费用会根据使用时间，系统自动计算，退款金额会根据您的付款方式进行退款。</p>
+                    </br>
+                    <h3>意见和建议？</h3>
+                    <p>您对万物仓有任何建议或意见，可拨打客服热线：400-888-9192，我们的客服人员会在第一时间解决您的问题。</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-inner-address">
+                    <img src="./assets/images/logo2.svg" alt="万物仓logo">
+                    <p class="line-one">福田区梅林路63号梅林万科大厦</p>
+                    <p class="line-two">中国 深圳</p>
+                </div>
+                <div class="footer-inner-phone">
+                    <p class="line-one">联系电话: </p>
+                    <p class="line-two"><a class="phone-number" href="tel:18688888888">400-888-9192</a></p>
+                </div>
+                <div class="footer-inner-email">
+                    <p class="line-one">邮箱: </p>
+                    <p class="line-two"><a href="mailto:wwc123@vanke.com">wwc123@vanke.com</a></p>
+                </div>
+                <div class="footer-inner-service">
+                    <p class="line-one">客服时间: </p>
+                    <p class="line-two">9:00-5:30</p>
+                </div>
+            </div>
+            <div class="footer-inner2">
+                <div><a href="../dist/index.html">首页</a></div>
+                <span></span>
+                <div><a href="../dist/about_vks.html">关于万物仓</a></div>
+                <span></span>
+                <div><a href="../dist/faq.html">常见问题</a></div>
+                <span></span>
+                <div><a href="../dist/about_us.html#company" name="company">公司简介</a></div>
+                <span></span>
+                <div><a href="../dist/about_us.html#team" name="team">我们的团队</a></div>
+                <span></span>
+                <div><a href="../dist/about_us.html#concat" name="concat">联系我们</a></div>
+            </div>
+            <div class="footer-code">
+                <img src="" alt="二维码" />
+                <p>扫一扫关注微信公众号</p>
+            </div>
+            <div class="copy-right">
+                Copyright &copy; 2004-2016 深圳市万物仓仓储有限公司 版权所有
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="./assets/faq.js"></script>
+</body>
+
+</html>
