@@ -12,7 +12,6 @@
     color: #bcbcbc;
 }
 
-
 /** section one start **/
 
 .section-one {
@@ -355,7 +354,12 @@
 .link-space {
     width: 100%;
     min-width: 1002px;
-    height: 900px;
+    /*height: 850px;*/
+}
+.canvas-link {
+    display: block;
+    width: 100%;
+    min-width: 1002px;
 }
 
 /** section five end **/
