@@ -1,18 +1,24 @@
 var baseUrl = "http://120.27.157.191/api/";
 var cityDom = $('#city');
 $(document).ready(function() {
+    var a4 = $('#link-about-us');
+    a4.addClass('nav-bar-item-line-op');
     $.get(baseUrl + "getCities?pageSize=100&curPage=1", function(data) {
         var cities = data.data.data;
         var list = [];
         var items = null;
-        while (cities.length % 5 != 0) {
+        var basic = 5;
+        if (window.screen.width <= 320) {
+            basic = 3;
+        }
+        while (cities.length % basic != 0) {
             cities.push({
                 "id": "",
                 "name": ""
             });
         }
         for (var i = 0; i < cities.length; i++) {
-            if (i % 5 == 0) {
+            if (i % basic == 0) {
                 items = [];
                 list.push(items);
             }

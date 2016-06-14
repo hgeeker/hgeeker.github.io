@@ -67,3 +67,47 @@
     border-right: 10px solid #ffffff;
     border-bottom: 10px solid transparent;
 }
+@media screen and (max-width:600px) {
+    .section-faq img {
+        width: 100%;
+        min-width: 0;
+    }
+    .section-faq-inner {
+        width: 90%;
+        margin: 30px auto 0 auto;
+    }
+    .line-about-title {
+        padding-left: 0;
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .line-about-numb {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .line-about-footer {
+        line-height: 50px;
+    }
+    .line-about-footer img {
+        width: 13px;
+        height: 13px;
+        position: relative;
+        top: -3px;
+    }
+    .arrow-left {
+        top: 19px;
+        left: -12px;
+        border-top: 6px solid transparent;
+        border-left: 6px solid transparent;
+        border-right: 6px solid #ffffff;
+        border-bottom: 6px solid transparent;
+    }
+    .line-about-info {
+        font-size: 14px;
+    }
+    .line-about-info h3 {
+        font-size: 15px;
+    }
+}

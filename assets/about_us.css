@@ -114,3 +114,95 @@ section {
     border-left: 1px solid #e5e5e5;
     display: inline-block;
 }
+.info-m {
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .us-head-img {
+        display: block;
+        width: 100%;
+        min-width: 320px;
+        margin-top: 80px;
+    }
+    .section-inner {
+        min-width: 320px;
+        width: 100%;
+    }
+    .section-inner h3 {
+        font-size: 18px;
+    }
+    .section-inner hr {
+        width: 80px;
+        border-top: 3px solid #f5d01f;
+    }
+    .section-inner h4 {
+        font-size: 16px;
+        margin: 8px 0;
+    }
+    .section-inner p {
+        line-height: 20px;
+        font-size: 14px;
+        width: 90%;
+        margin: auto;
+    }
+    .section-company {
+        height: auto;
+        padding: 20px 0 20px 0;
+    }
+    .section-shops {
+        min-width: 320px;
+        height: 160px;
+    }
+    .section-shops a {
+        height: 50px;
+        line-height: 50px;
+        width: 160px;
+    }
+    .section-team {
+        height: auto;
+        padding: 20px 0 20px 0;
+    }
+    .section-team img {
+        height: auto;
+        width: 85%;
+        margin: 20px 0;
+    }
+    .section-team-sign {
+        margin-top: 20px !important;
+    }
+    .section-concat {
+        height: auto;
+        padding: 20px 0 0 0;
+    }
+    .section-child-company {
+        margin-top: 40px;
+        display: block;
+    }
+    .section-child-company h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .section-child-company div {
+        padding-bottom: 35px;
+        display: block;
+    }
+    .section-child-company span {
+        display: none;
+    }
+    .section-concat-bottom-img {
+        min-width: 0;
+        height: 80px;
+        width: 100%;
+        position: relative;
+    }
+    .info-d {
+        display: none;
+    }
+    .info-m {
+        display: block;
+        font-size: 14px;
+        width: 90%;
+        margin: auto;
+        line-height: 20px;
+    }
+}

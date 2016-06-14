@@ -12,12 +12,28 @@
 <body class="about-page">
     <nav id="nav-header" class="nav-bar nav-bar-white">
         <div class="nav-bar-inner">
-            <div class="nav-bar-logo"><img src="./assets/images/logo.svg" alt="logo" /></div>
+            <div class="nav-bar-logo"><img src="./assets/images/logo.svg" alt="logo" />
+                <div id="float-btn" onclick="toggleMenu()" class="nav-bar-float-btn float-btn-opp">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="float-menu" class="nav-bar-float-menu">
+                    <li><a href="./index.html">首页</a></li>
+                    <hr/>
+                    <li><a href="./about_vks.html">关于万物仓</a></li>
+                    <hr/>
+                    <li><a href="./faq.html">常见问题</a></li>
+                    <hr/>
+                    <li><a href="./about_us.html">关于我们</a></li>
+                </ul>
+                <div id="menu-mask" ontouchend="menuBlur()" class="menu-mask"></div>
+            </div>
             <ul class="nav-bar-tab nav-bar-tab-opposite">
-                <li class="tab-item-small"><a href="./index.html">首页</a></li>
-                <li class="tab-item-big"><a href="./about_vks.html">关于万物仓</a></li>
-                <li><a href="./faq.html">常见问题</a><span></span></li>
-                <li><a href="./about_us.html">关于我们</a><span class="item-bottom-line item-bottom-line-opposite"></span></li>
+                <li class="tab-item-small"><a id="link-main" href="./index.html">首页</a></li>
+                <li class="tab-item-big"><a id="link-about-vks" href="./about_vks.html">关于万物仓</a></li>
+                <li><a id="link-faq" href="./faq.html">常见问题</a></li>
+                <li><a id="link-about-us" href="./about_us.html">关于我们</a></li>
                 <li class="nav-bar-line nav-bar-line-opposite"></li>
                 <li class="tab-item-big"><img class="nav-bar-phone" src="./assets/images/phone.svg" alt="电话"></li>
             </ul>
@@ -39,7 +55,7 @@
             </div>
             <div class="footer-inner-phone">
                 <p class="line-one">联系电话: </p>
-                <p class="line-two"><a class="phone-number" href="tel:18688888888">400-888-9192</a></p>
+                <p class="line-two"><a class="phone-number" href="tel:4008889192">400-888-9192</a></p>
             </div>
             <div class="footer-inner-email">
                 <p class="line-one">邮箱: </p>
@@ -63,6 +79,22 @@
             <span></span>
             <div><a href="./about_us.html#concat" name="concat">联系我们</a></div>
         </div>
+        <div class="footer-inner2-m">
+            <div>
+                <div><a href="./index.html">首页</a></div>
+                <span></span>
+                <div><a href="./about_vks.html">关于万物仓</a></div>
+                <span></span>
+                <div><a href="./faq.html">常见问题</a></div>
+            </div>
+            <div>
+                <div><a href="./about_us.html#company" name="company">公司简介</a></div>
+                <span></span>
+                <div><a href="./about_us.html#team" name="team">我们的团队</a></div>
+                <span></span>
+                <div><a href="./about_us.html#concat" name="concat">联系我们</a></div>
+            </div>
+        </div>
         <div class="footer-code">
             <img src="" alt="二维码" />
             <p>扫一扫关注微信公众号</p>
@@ -72,6 +104,7 @@
         </div>
     </footer>
     <script src="//cdn.bootcss.com/jquery/3.0.0-rc1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/custom.js"></script>
     <script type="text/javascript" src="./assets/about_us.js"></script>
 </body>
 

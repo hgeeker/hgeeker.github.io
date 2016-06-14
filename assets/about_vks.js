@@ -1,3 +1,4 @@
+var floatBtn = document.getElementById('float-btn');
 window.onscroll = function() {
     var top = document.documentElement.scrollTop || document.body.scrollTop;
     var header = document.getElementById("nav-header");
@@ -7,9 +8,11 @@ window.onscroll = function() {
     }
     header.style.backgroundColor = "rgba(255,255,255," + trans + ")";
     if (trans >= 0.9) {
-        header.style.borderBottom = "1px solid #e5e5e5";
+        header.style.boxShadow = "0 0 5px #e5e5e5";
+        addClass(floatBtn, "float-btn-opp");
     } else {
-        header.style.borderBottom = "0";
+        header.style.boxShadow = "0 0 0 #e5e5e5";
+        removeClass(floatBtn, "float-btn-opp");
     }
 }
 var image1 = new Image();
@@ -23,19 +26,19 @@ var circle1 = {
     r: 18 //圆的半径
 };
 var circle2 = {
-    x: 820, //圆心的x轴坐标值
-    y: 120, //圆心的y轴坐标值
-    r: 16 //圆的半径
+    x: 820,
+    y: 120,
+    r: 16
 };
 var circle3 = {
-    x: 1520, //圆心的x轴坐标值
-    y: 600, //圆心的y轴坐标值
-    r: 12 //圆的半径
+    x: 1520,
+    y: 600,
+    r: 12
 };
 var circle4 = {
-    x: 1820, //圆心的x轴坐标值
-    y: 350, //圆心的y轴坐标值
-    r: 10 //圆的半径
+    x: 1820,
+    y: 350,
+    r: 10
 };
 var circle5 = {
     x: 250,
@@ -63,16 +66,16 @@ function drawCircle(x, y) {
         y: 300 + y + 88,
     };
     img2 = {
-        x: 560 - x + 75,
-        y: 350 + y + 75,
+        x: 560 - x + 60,
+        y: 350 + y + 60,
     };
     img3 = {
-        x: 880 + x + 75,
-        y: 600 - y + 75,
+        x: 880 + x + 60,
+        y: 600 - y + 60,
     };
     img4 = {
-        x: 1212 - x + 65,
-        y: 150 + y + 65,
+        x: 1212 - x + 50,
+        y: 150 + y + 50,
     };
     img5 = {
         x: 202 - x + 44,
@@ -210,50 +213,50 @@ function drawCircle(x, y) {
     ctxc.lineTo(circle6.x + x, circle6.y - y);
     ctxc.stroke();
 
-    image1.src = "./assets/images/logo5.svg";
+    image1.src = "./assets/images/logo5-01.png";
     ctxc.drawImage(image1, 872 + x, 300 + y, 176, 176);
 
-    image2.src = "./assets/images/wuliu.svg";
-    ctxc.drawImage(image2, 560 - x, 350 + y, 150, 150);
+    image2.src = "./assets/images/wuliu-01.png";
+    ctxc.drawImage(image2, 560 - x, 350 + y, 120, 120);
 
     ctxc.fillStyle = "#000000";
     ctxc.font = "normal normal 500 26px 微软雅黑";
-    ctxc.fillText("更便捷", 595 - x, 495 + y);
+    ctxc.fillText("更便捷", 590 - x, 495 + y);
 
     ctxc.fillStyle = "#C2C1CD";
 
     ctxc.font = "normal normal normal 20px 微软雅黑";
-    ctxc.fillText("专业搬运，快速达到仓库", 453 - x, 525 + y);
-    ctxc.fillText("全程轻松搞定", 553 - x, 555 + y);
+    ctxc.fillText("专业搬运，快速达到仓库", 448 - x, 525 + y);
+    ctxc.fillText("全程轻松搞定", 545 - x, 555 + y);
 
 
-    image3.src = "./assets/images/shouji.svg";
-    ctxc.drawImage(image3, 880 + x, 600 - y, 150, 150);
+    image3.src = "./assets/images/shouji-01.png";
+    ctxc.drawImage(image3, 880 + x, 600 - y, 120, 120);
 
     ctxc.fillStyle = "#000000";
     ctxc.font = "normal normal 500 26px 微软雅黑";
-    ctxc.fillText("更好的体验", 1010 + x, 670 - y);
+    ctxc.fillText("更好的体验", 995 + x, 650 - y);
 
     ctxc.fillStyle = "#C2C1CD";
 
     ctxc.font = "normal normal normal 20px 微软雅黑";
-    ctxc.fillText("在线选仓，微信系统平台", 1010 + x, 703 - y);
-    ctxc.fillText("全程互联网体验", 1010 + x, 730 - y);
+    ctxc.fillText("在线选仓，微信系统平台", 995 + x, 683 - y);
+    ctxc.fillText("全程互联网体验", 995 + x, 710 - y);
 
-    image4.src = "./assets/images/anquan.svg";
-    ctxc.drawImage(image4, 1212 - x, 150 + y, 130, 130);
+    image4.src = "./assets/images/anquan-01.png";
+    ctxc.drawImage(image4, 1212 - x, 150 + y, 100, 100);
 
     ctxc.fillStyle = "#000000";
     ctxc.font = "normal normal 500 26px 微软雅黑";
-    ctxc.fillText("更安全", 1330 - x, 200 + y);
+    ctxc.fillText("更安全", 1320 - x, 180 + y);
 
     ctxc.fillStyle = "#C2C1CD";
 
     ctxc.font = "normal normal normal 20px 微软雅黑";
-    ctxc.fillText("定时巡仓，温湿度控制", 1330 - x, 233 + y);
-    ctxc.fillText("24小时安全无忧", 1330 - x, 263 + y);
+    ctxc.fillText("定时巡仓，温湿度控制", 1320 - x, 213 + y);
+    ctxc.fillText("24小时安全无忧", 1320 - x, 243 + y);
 
-    image5.src = "./assets/images/anquan.svg";
+    image5.src = "./assets/images/anquan-01.png";
     ctxc.drawImage(image5, 202 - x, 500 - y, 88, 88);
 
     ctxc.fillStyle = "#e5e5e5";
@@ -330,4 +333,29 @@ var animation = function() {
 window.onload = function() {
     drawCircle();
     setInterval('animation()', 50);
+    var a3 = document.getElementById('link-about-vks');
+    addClass(a3, 'nav-bar-item-line-op');
+}
+
+var showIcon = function(id) {
+    var array = id.childNodes;
+    array[1].style.display = "block";
+}
+var hideIcon = function(id) {
+    var array = id.childNodes;
+    array[1].style.display = "none";
+}
+var focusCard = function(obj, ev) {
+    if (ev.relatedTarget.className === "section-inner" || ev.relatedTarget.className === "section-six") {
+        addClass(obj, "card-focus");
+    } else {
+        return
+    }
+}
+var blurCard = function(obj, ev) {
+    if (ev.relatedTarget.className === "section-inner" || ev.relatedTarget.className === "section-six") {
+        removeClass(obj, "card-focus");
+    } else {
+        return
+    }
 }

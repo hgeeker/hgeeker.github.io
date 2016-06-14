@@ -98,3 +98,58 @@
     font-size: 14px;
     color: #242424;
 }
+@media screen and (max-width:600px) {
+    .us-head-img {
+        min-width: 320px;
+    }
+    .section-citys {
+        margin: 20px 0;
+    }
+    .section-inner {
+        min-width: 320px;
+        width: 100%;
+    }
+    .city-line {
+        margin: 10px 0;
+        display: block;
+    }
+    .city-item {
+        display: inline-block;
+    }
+    .city-radius {
+        width: 70px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+    }
+    .section-shops {
+        min-height: 0;
+    }
+    .shop-item {
+        width: 95%;
+        height: 70px;
+    }
+    .shop-item-header {
+        line-height: 15px;
+        padding-left: 10px;
+        min-width: 200px;
+    }
+    .shop-item-header-one {
+        font-size: 16px;
+        top: 10px;
+    }
+    .shop-item-header-two {
+        font-size: 12px;
+        top: 18px;
+    }
+    .shop-item-footer img {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 5px;
+    }
+    .shop-item-footer a {
+        top: -3px;
+        font-size: 12px;
+    }
+}

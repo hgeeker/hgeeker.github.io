@@ -1,41 +1,54 @@
 window.onload = function() {
+    var a1 = document.getElementById('link-main');
+    var image1 = document.getElementById('title-id-one');
+    var image2 = document.getElementById('title-id-two');
+    var image3 = document.getElementById('title-id-three');
+    var mainBtn = document.getElementById('main-btn-id');
+    var mouseIcon = document.getElementById("mouse-icon");
+    var bottomArrow = document.getElementById("bottom-arrow");
+    addClass(a1, "nav-bar-item-line");
+    addClass(image1, "main-title-slide");
+    addClass(mainBtn, "main-button-slide");
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'vertical',
         pagination: '.swiper-pagination',
         keyboardControl: true,
         mousewheelControl: true,
         onSlideChangeStart: function(swiper) {
-            var mouseIcon = document.getElementById("mouse-icon");
             if (swiper.activeIndex === 2) {
                 mouseIcon.style.display = "none";
+                bottomArrow.style.display = "none";
             } else {
                 mouseIcon.style.display = "block";
+                bottomArrow.style.display = "block";
+            }
+            switch (swiper.activeIndex) {
+                case 0:
+                    if (hasClass(image1, 'main-title-slide')) {
+                        return;
+                    } else {
+                        addClass(image1, 'main-title-slide');
+                    }
+                    break;
+                case 1:
+                    if (hasClass(image2, 'main-title-slide')) {
+                        return;
+                    } else {
+                        addClass(image2, 'main-title-slide');
+                    }
+                    break;
+                    break;
+                case 2:
+                    if (hasClass(image3, 'main-title-slide')) {
+                        return;
+                    } else {
+                        addClass(image3, 'main-title-slide');
+                    }
+                    break;
+                    break;
             }
         }
     });
-}
-
-function hasClass(obj, cls) {
-    return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
-}
-
-function addClass(obj, cls) {
-    if (!this.hasClass(obj, cls)) obj.className += " " + cls;
-}
-
-function removeClass(obj, cls) {
-    if (hasClass(obj, cls)) {
-        var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
-        obj.className = obj.className.replace(reg, ' ');
-    }
-}
-
-function toggleClass(obj, cls) {
-    if (hasClass(obj, cls)) {
-        removeClass(obj, cls);
-    } else {
-        addClass(obj, cls);
-    }
 }
 var page = document.getElementById('main-page');
 var mask = document.getElementById('main-mask');

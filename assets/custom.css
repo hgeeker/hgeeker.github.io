@@ -6,7 +6,7 @@ html {
     -moz-font-smoothing: antialiased;
     -ms-font-smoothing: antialiased;
 }
-html, body, nav, div, ul, li, section, p, h3,h4 {
+html, body, nav, div, ul, li, section, p, h3, h4 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -26,7 +26,11 @@ html, body, nav, div, ul, li, section, p, h3,h4 {
 }
 .nav-bar-white {
     background-color: white;
-    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 0 5px #e5e5e5;
+    -webkit-box-shadow: 0 0 5px #e5e5e5;
+    -o-box-shadow: 0 0 5px #e5e5e5;
+    -ms-box-shadow: 0 0 5px #e5e5e5;
+    -moz-box-shadow: 0 0 5px #e5e5e5;
 }
 .nav-bar-inner {
     display: -ms-flexbox;
@@ -46,6 +50,95 @@ html, body, nav, div, ul, li, section, p, h3,h4 {
     width: 130px;
     height: 50px;
     margin: 16px 0 0 0;
+}
+.nav-bar-float-btn {
+    width: 45px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: fixed;
+    right: 15px;
+    top: 16px;
+    display: none;
+    z-index: 7;
+}
+.float-btn-opp {
+    border: 2px solid #2a2a2a;
+}
+.float-btn-opp span {
+    border: 1px solid #2a2a2a !important;
+}
+.menu-mask {
+    display: none;
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+}
+.nav-bar-float-btn:active {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.nav-bar-float-btn span {
+    display: block;
+    height: 0;
+    width: 20px;
+    margin: 5px auto;
+    border: 1px solid #ffffff;
+    border-radius: 1px;
+    position: relative;
+    top: 10px;
+}
+.nav-bar-float-menu {
+    position: fixed;
+    z-index: 7;
+    right: 15px;
+    top: 90px;
+    width: 120px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    list-style: none;
+    text-align: center;
+    background-color: #ffffff;
+    display: none;
+    box-shadow: 0 0 4px #868686;
+    -webkit-box-shadow: 0 0 4px #868686;
+}
+.nav-bar-float-menu:before {
+    content: "";
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 10px solid #ffffff;
+    position: absolute;
+    right: 14px;
+    top: -10px;
+}
+.nav-bar-float-menu li {
+    height: 35px;
+    line-height: 35px;
+    margin: 5px 0;
+}
+.nav-bar-float-menu li a {
+    color: #f5d01f;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.nav-bar-float-menu hr {
+    padding: 0;
+    margin: auto;
+    width: 105px;
+    height: 0;
+    border: 0;
+    border-bottom: 1px solid #f3f3f3;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
 }
 .nav-bar-tab {
     width: 600px;
@@ -79,9 +172,21 @@ html, body, nav, div, ul, li, section, p, h3,h4 {
 }
 .nav-bar-tab li a {
     color: #ffffff;
+    display: inline-block;
+    height: 55px;
+}
+.nav-bar-tab li a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+.nav-bar-item-line {
+    border-bottom: 2px solid #ffffff;
+}
+.nav-bar-item-line-op {
+    border-bottom: 2px solid #332a17;
 }
 .nav-bar-tab-opposite li a {
     color: #332a17;
+    display: inline-block;
 }
 
 /*.nav-bar-tab-active {
@@ -243,8 +348,8 @@ html, body, nav, div, ul, li, section, p, h3,h4 {
 /** footer start **/
 
 .footer {
-    height: 470;
     background-color: #292b2d;
+    min-width: 1002px;
 }
 footer a, a:hover, a:link, a:active, a:visited {
     text-decoration: none;
@@ -349,6 +454,10 @@ footer a, a:hover, a:link, a:active, a:visited {
             transform: translate(0, -50%);
     background-color: #3E3E3E;
 }
+.footer-inner2-m {
+    display: none;
+    width: 100%;
+}
 .footer-code {
     font-size: 12px;
     color: #c2c1c0;
@@ -376,4 +485,117 @@ footer a, a:hover, a:link, a:active, a:visited {
     text-align: center;
     color: #c2c1c0;
     margin-top: 100px;
+}
+@media screen and (max-width:600px) {
+    .nav-bar-logo {
+        padding: 10px 0 0 10px;
+        width: 100%;
+    }
+    .nav-bar-logo img {
+        margin: 10px 0 0 0;
+    }
+    .nav-bar-float-btn {
+        display: block;
+    }
+    .nav-bar-tab {
+        display: none;
+    }
+    .footer {
+        width: 100%;
+        height: auto;
+        min-width: 320px;
+    }
+    .footer-inner {
+        height: auto;
+        width: 100%;
+    }
+    .footer-inner-address {
+        width: 100%;
+        position: relative;
+        padding-left: 180px;
+        font-size: 14px;
+        padding-top: 10px;
+    }
+    .footer-inner-address img {
+        width: 120px;
+        min-width: 120px;
+        position: absolute;
+        left: 10px;
+        top: -10px;
+    }
+    .line-one {
+        display: inline;
+    }
+    .line-two {
+        display: inline;
+    }
+    .footer-inner-phone {
+        font-size: 14px;
+        width: 100%;
+        padding-left: 10px;
+        margin: 10px 0 0 0;
+    }
+    .footer-inner-email {
+        font-size: 14px;
+        width: 100%;
+        padding-left: 10px;
+        margin: 10px 0 0 0;
+    }
+    .footer-inner-service {
+        font-size: 14px;
+        width: 100%;
+        padding-left: 10px;
+        margin: 10px 0 0 0;
+    }
+    .footer-inner2 {
+        display: none;
+    }
+    .footer-inner2-m {
+        display: block;
+        margin: 20px auto 0 auto;
+        max-width: 320px;
+        font-size: 12px;
+    }
+    .footer-inner2-m div {
+        display: -ms-flexbox;
+        display: flex;
+        display: -webkit-flex;
+        display: -o-flex;
+        display: -mozflex;
+        display: -ms-flex;
+    }
+    .footer-inner2-m div div {
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        -o-flex: 1;
+        flex: 1;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .footer-inner2-m a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .copy-right {
+        font-size: 12px;
+        text-align: center;
+        color: #c2c1c0;
+        margin: 30px 30px 0 30px;
+    }
+}
+
+/*@media screen and (min-width: 400px) and (max-width:600px) {
+    .footer-inner-service {
+        font-size: 14px;
+        text-align: center;
+        padding-left: 25px;
+    }
+}*/
+
+@media screen and (min-width: 0px) and (max-width:320px) {
+    .footer-inner-address {
+        padding-left: 150px;
+    }
 }

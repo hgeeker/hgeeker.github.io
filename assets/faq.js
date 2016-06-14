@@ -94,3 +94,7 @@ var checkItem = function(number) {
             break;
     }
 }
+window.onload = function() {
+    var a2 = document.getElementById('link-faq');
+    addClass(a2, 'nav-bar-item-line-op');
+}
