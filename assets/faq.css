@@ -6,10 +6,15 @@
     background-color: #f8f9fd;
     margin-bottom: 300px;
 }
-.section-faq>img {
-    display: block;
+.section-faq-img {
     width: 100%;
     min-width: 1002px;
+    display: block;
+}
+.section-faq-img-m {
+    width: 100%;
+    min-width: 0;
+    display: none;
 }
 .section-faq-inner {
     width: 980px;
@@ -68,9 +73,14 @@
     border-bottom: 10px solid transparent;
 }
 @media screen and (max-width:600px) {
-    .section-faq img {
-        width: 100%;
-        min-width: 0;
+    .section-faq {
+        padding-top: 0;
+    }
+    .section-faq-img {
+        display: none;
+    }
+    .section-faq-img-m {
+        display: block;
     }
     .section-faq-inner {
         width: 90%;

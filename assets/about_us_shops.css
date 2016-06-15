@@ -7,6 +7,11 @@
     min-width: 1002px;
     margin-top: 80px;
 }
+.us-head-img-m {
+    width: 100%;
+    min-width: 320px;
+    display: none;
+}
 .section-inner {
     width: 1002px;
     margin: auto;
@@ -100,7 +105,10 @@
 }
 @media screen and (max-width:600px) {
     .us-head-img {
-        min-width: 320px;
+        display: none;
+    }
+    .us-head-img-m {
+        display: block;
     }
     .section-citys {
         margin: 20px 0;

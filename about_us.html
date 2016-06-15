@@ -13,7 +13,7 @@
     <nav id="nav-header" class="nav-bar nav-bar-white">
         <div class="nav-bar-inner">
             <div class="nav-bar-logo"><img src="./assets/images/logo.svg" alt="logo" />
-                <div id="float-btn" onclick="toggleMenu()" class="nav-bar-float-btn float-btn-opp">
+                <div id="float-btn" onclick="toggleMenu()" class="nav-bar-float-btn">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -40,6 +40,7 @@
         </div>
     </nav>
     <img class="us-head-img" src="./assets/images/about_wwc_05.png" alt="" />
+    <img class="us-head-img-m" src="./assets/images/5.png">
     <section id="company" name="company" class="section-company">
         <div class="section-inner">
             <h3>公司简介</h3>
@@ -69,7 +70,7 @@
         <div class="section-inner">
             <h3>我们的团队</h3>
             <hr/>
-            <img src="" alt="合照" />
+            <img src="./assets/images/10.png" alt="合照" />
             <p>海外背景的团队</br>来自500强企业的精英</br>我们专注于创新及新科技的应用并不断的学习成长</p>
             <p class="section-team-sign">年轻活力，不拘一格</br>因为一个事业，我们聚在一起</br>共同奋斗，实现梦想</p>
         </div>
@@ -92,8 +93,8 @@
                 </div>
             </div>
         </div>
-        <div class="section-concat-bottom-img">
-        </div>
+        <img class="section-concat-bottom-img" src="./assets/images/about_wwc_07.png" />
+        <img class="section-concat-bottom-img-m" src="./assets/images/6.png" />
     </section>
     <footer class="footer">
         <div class="footer-inner">
@@ -145,7 +146,7 @@
             </div>
         </div>
         <div class="footer-code">
-            <img src="" alt="二维码" />
+            <img src="./assets/images/code.png" alt="二维码" />
             <p>扫一扫关注微信公众号</p>
         </div>
         <div class="copy-right">
@@ -157,6 +158,22 @@
         window.onload = function() {
             var a4 = document.getElementById('link-about-us');
             addClass(a4, 'nav-bar-item-line-op');
+        }
+        window.onscroll = function() {
+            var top = document.documentElement.scrollTop || document.body.scrollTop;
+            var header = document.getElementById("nav-header");
+            var trans = top / 200;
+            if (trans >= 0.9) {
+                trans = 0.9;
+            }
+            header.style.backgroundColor = "rgba(255,255,255," + trans + ")";
+            if (trans >= 0.9) {
+                header.style.boxShadow = "0 0 5px #e5e5e5";
+                addClass(floatBtn, "float-btn-opp");
+            } else {
+                header.style.boxShadow = "0 0 0 #e5e5e5";
+                removeClass(floatBtn, "float-btn-opp");
+            }
         }
     </script>
     <!-- <script type="text/javascript" src="./assets/about_us.js"></script> -->
