@@ -29,7 +29,7 @@ $(document).ready(function() {
             line.addClass('city-line');
             for (var j = 0; j < list[i].length; j++) {
                 var item = $('<div></div>');
-                var span = $('<span id="' + 'city' + list[i][j].id + '" class="city-radius" onclick="cityChange(' + list[i][j].id + ')">' + list[i][j].name + '</span>');
+                var span = $('<span id="' + 'city' + list[i][j].id + '" class="city-radius" onclick="cityChange(' + list[i][j].id + ')" onmouseover="cityOver(' + list[i][j].id + ')" onmouseout="cityOut(' + list[i][j].id + ')">' + list[i][j].name + '</span>');
                 item.append(span);
                 item.addClass('city-item');
                 if (j === 0 && i === 0) {
@@ -45,8 +45,23 @@ $(document).ready(function() {
 var cityChange = function(id) {
     if (id != null && typeof(id) != "undefined") {
         $('.city-active').removeClass('city-active');
+        $('#city' + id).removeClass('city-hover');
         $('#city' + id).addClass('city-active');
         getShopsByCity(id);
+    }
+}
+var cityOver = function(id) {
+    if ($('#city' + id).hasClass('city-active')) {
+        return;
+    } else {
+        $('#city' + id).addClass('city-hover');
+    }
+}
+var cityOut = function(id) {
+    if ($('#city' + id).hasClass('city-active')) {
+        return;
+    } else {
+        $('#city' + id).removeClass('city-hover');
     }
 }
 var shopDom = $("#shop");
@@ -55,7 +70,7 @@ var getShopsByCity = function(id) {
     $.get(baseUrl + "getShopsByLatiAndlongi?cityID=" + id + "&longitude=0&latitude=0&condition=", function(data) {
         var shops = data.data;
         for (var i = 0; i < shops.length; i++) {
-            shopDom.append('<div class="shop-item"><div class="shop-item-header"><p class="shop-item-header-one">' + shops[i].name + '</p><p class="shop-item-header-two ">' + shops[i].address + '</p></div><div class="shop-item-footer"><img src="./assets/images/weiz.svg" /><a href="http://api.map.baidu.com/geocoder?address=' + shops[i].address + '&output=html&src=yourCompanyName|yourAppName">查看具体位置</a></div></div>')
+            shopDom.append('<div class="shop-item"><div class="shop-item-header"><p class="shop-item-header-one">' + shops[i].name + '</p><p class="shop-item-header-two ">' + shops[i].address + '</p></div><span class="shop-item-line"></span><div class="shop-item-footer"><img src="./assets/images/weiz.svg" /><a href="http://api.map.baidu.com/geocoder?address=' + shops[i].address + '&output=html&src=yourCompanyName|yourAppName">查看具体位置</a></div></div>')
         }
     }, "json");
 }

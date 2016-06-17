@@ -1,11 +1,23 @@
 .about-page {
     background-color: #f8f9fd;
 }
+.img-for-pc {
+    position: relative;
+    display: block;
+}
+.img-for-pc>div {
+    width: 980px;
+    margin: auto;
+}
 .us-head-img {
     display: block;
     width: 100%;
     min-width: 1002px;
     margin-top: 80px;
+}
+.us-head-title {
+    position: absolute;
+    bottom: 40px;
 }
 .us-head-img-m {
     width: 100%;
@@ -37,12 +49,13 @@
     -ms-flex: 1;
 }
 .city-radius {
-    width: 170px;
-    height: 60px;
+    width: 120px;
+    height: 50px;
     text-align: center;
     display: block;
-    line-height: 60px;
-    font-size: 20px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 600;
     color: #979797;
     margin: auto;
 }
@@ -51,13 +64,24 @@
     color: #242424;
     border-radius: 30px;
 }
+.city-hover {
+    border-radius: 30px;
+    background-color: #e5e5e5;
+}
+.city-dot-line {
+    border: 0;
+    border-bottom: 1px dashed rgba(175, 175, 175, 0.38);
+    position: relative;
+    top: -25px;
+}
 .section-shops {
     margin-bottom: 88px;
     min-height: 800px;
 }
 .shop-item {
-    width: 750px;
+    width: 932px;
     height: 120px;
+    border-radius: 5px;
     display: -ms-flexbox;
     display: flex;
     display: -webkit-flex;
@@ -66,6 +90,14 @@
     display: -moz-flex;
     margin: 10px auto;
     background-color: #ffffff;
+}
+.shop-item-line {
+    display: inline-block;
+    width: 0;
+    height: 40%;
+    border: 0;
+    border-left: 1px solid #e5e5e5;
+    margin: auto;
 }
 .shop-item-header {
     flex: 1;
@@ -80,7 +112,7 @@
 .shop-item-header-one {
     position: relative;
     top: 10px;
-    font-size: 24px;
+    font-size: 20px;
 }
 .shop-item-header-two {
     position: relative;
@@ -107,6 +139,13 @@
     .us-head-img {
         display: none;
     }
+    .us-head-title {
+        display: block !important;
+        width: 120px;
+        left: 20px;
+        top: 30%;
+        margin-top: 35%;
+    }
     .us-head-img-m {
         display: block;
     }
@@ -124,6 +163,9 @@
     .city-item {
         display: inline-block;
     }
+    .city-dot-line {
+        top: -5px;
+    }
     .city-radius {
         width: 70px;
         height: 35px;
@@ -134,7 +176,7 @@
         min-height: 0;
     }
     .shop-item {
-        width: 95%;
+        width: 90%;
         height: 70px;
     }
     .shop-item-header {
@@ -150,6 +192,9 @@
         font-size: 12px;
         top: 18px;
     }
+    .shop-item-footer {
+        max-width: 100px;
+    }
     .shop-item-footer img {
         width: 30px;
         height: 30px;
@@ -159,5 +204,10 @@
     .shop-item-footer a {
         top: -3px;
         font-size: 12px;
+    }
+}
+@media screen and (max-width:320px) {
+    .city-item {
+        width: 30%;
     }
 }

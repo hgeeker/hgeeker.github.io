@@ -6,10 +6,25 @@
     background-color: #f8f9fd;
     margin-bottom: 300px;
 }
+.img-for-pc {
+    display: block;
+    position: relative;
+}
+.img-for-pc>div {
+    width: 980px;
+    margin: auto;
+    position: relative;
+}
 .section-faq-img {
     width: 100%;
     min-width: 1002px;
     display: block;
+}
+.section-faq-title {
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
 }
 .section-faq-img-m {
     width: 100%;
@@ -26,7 +41,7 @@
     display: -ms-flexbox;
     display: flex;
     margin: 25px 0 10px 0;
-    font-size: 25px;
+    font-size: 20px;
     background-color: #ffffff;
 }
 .line-about-numb {
@@ -36,6 +51,7 @@
     width: 80px;
     font-size: 25px;
     background-color: #ffd102;
+    border-radius: 2px 0 0 2px;
 }
 .line-about-title {
     -webkit-flex: 3;
@@ -43,6 +59,8 @@
         flex: 3;
     line-height: 80px;
     padding-left: 20px;
+    font-weight: 600;
+    font-size: 18px;
 }
 .line-about-footer {
     -webkit-flex: 0.4;
@@ -61,22 +79,26 @@
     background-color: #ffffff;
     display: none;
 }
+.line-about-info p {
+    margin: 5px 0 0 0;
+}
 .arrow-left {
     position: relative;
     width: 0;
     height: 0;
-    left: -20px;
-    top: 30px;
-    border-top: 10px solid transparent;
-    border-left: 10px solid transparent;
-    border-right: 10px solid #ffffff;
-    border-bottom: 10px solid transparent;
+    left: -15px;
+    top: 32px;
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid #ffffff;
+    border-bottom: 8px solid transparent;
 }
 @media screen and (max-width:600px) {
     .section-faq {
         padding-top: 0;
+        margin-bottom: 60px;
     }
-    .section-faq-img {
+    .img-for-pc {
         display: none;
     }
     .section-faq-img-m {
@@ -86,16 +108,19 @@
         width: 90%;
         margin: 30px auto 0 auto;
     }
+    .line-about {
+        margin: 15px 0 0 0;
+    }
     .line-about-title {
         padding-left: 0;
         line-height: 50px;
-        font-size: 16px;
+        font-size: 14px;
     }
     .line-about-numb {
         height: 50px;
         width: 50px;
         line-height: 50px;
-        font-size: 16px;
+        font-size: 14px;
     }
     .line-about-footer {
         line-height: 50px;

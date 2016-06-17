@@ -6,7 +6,7 @@ window.onload = function() {
     var mainBtn = document.getElementById('main-btn-id');
     var mouseIcon = document.getElementById("mouse-icon");
     var bottomArrow = document.getElementById("bottom-arrow");
-    addClass(a1, "nav-bar-item-line");
+    addClass(a1, "nav-bar-item-line-op");
     addClass(image1, "main-title-slide");
     addClass(mainBtn, "main-button-slide");
     var mySwiper = new Swiper('.swiper-container', {
@@ -20,7 +20,9 @@ window.onload = function() {
                 bottomArrow.style.display = "none";
             } else {
                 mouseIcon.style.display = "block";
-                bottomArrow.style.display = "block";
+                if (window.screen.width <= 600) {
+                    bottomArrow.style.display = "block";
+                }
             }
             switch (swiper.activeIndex) {
                 case 0:
