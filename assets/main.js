@@ -12,6 +12,7 @@ window.onload = function() {
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'vertical',
         pagination: '.swiper-pagination',
+        lazyLoading: true,
         keyboardControl: true,
         mousewheelControl: true,
         onSlideChangeStart: function(swiper) {
@@ -47,21 +48,20 @@ window.onload = function() {
                         addClass(image3, 'main-title-slide');
                     }
                     break;
-                    break;
             }
         }
     });
 }
 var page = document.getElementById('main-page');
 var mask = document.getElementById('main-mask');
-var showVideo = function() {
-    addClass(page, "blur-in");
-    removeClass(page, "blur-out");
-    mask.style.display = "block";
-}
-
-var hideVideo = function() {
-    addClass(page, "blur-out");
-    removeClass(page, "blur-in");
-    mask.style.display = "none";
-}
+// var showVideo = function() {
+//     addClass(page, "blur-in");
+//     removeClass(page, "blur-out");
+//     mask.style.display = "block";
+// }
+//
+// var hideVideo = function() {
+//     addClass(page, "blur-out");
+//     removeClass(page, "blur-in");
+//     mask.style.display = "none";
+// }

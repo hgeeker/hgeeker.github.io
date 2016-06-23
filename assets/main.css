@@ -11,16 +11,19 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    height: 100%;
 }
+
 .item-one {
-    background-image: url(./images/bj1.png);
+    background-image: url(./images/bj1.jpg);
 }
 .item-two {
-    background-image: url(./images/bj2.png);
+    background-image: url(./images/bj2.jpg);
 }
 .item-three {
-    background-image: url(./images/bj3.png);
+    background-image: url(./images/bj3.jpg);
 }
+
 .main-title {
     height: 120px;
     position: relative;

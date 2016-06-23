@@ -1,1 +1,19 @@
-<svg id="图层_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><style>.st0{fill:#f5d020}</style><g id="XMLID_2_"><path id="XMLID_8_" class="st0" d="M84.6.5H15.4c-.5 0-1 .5-1 1v97c0 .5.5 1 1 1h69.1c.5 0 1-.5 1-1v-97c.1-.5-.4-1-.9-1zm-2.2 94.7c0 .5-.5 1-1 1H17.9c-.5 0-1-.5-1-1l.7-90c0-.5.5-1 1-1h62.8c.5 0 1 .5 1 1v90z"/><path id="XMLID_7_" class="st0" d="M56.1 10.5H44c-1 0-1.8-.8-1.8-1.7 0-1 .8-1.8 1.8-1.8h12.1c1 0 1.8.8 1.8 1.7 0 1-.8 1.8-1.8 1.8z"/><circle id="XMLID_6_" class="st0" cx="50" cy="88.3" r="4.5"/><path id="XMLID_3_" class="st0" d="M74.8 13.6H25.2c-.4 0-.7.3-.7.7v64c0 .4.3.7.7.7h49.6c.4 0 .7-.3.7-.7v-64c0-.4-.3-.7-.7-.7zm-.9 62.9c0 .4-.3.7-.7.7H26.8c-.4 0-.7-.3-.7-.7V16c0-.4.3-.7.7-.7h46.4c.4 0 .7.3.7.7v60.5z"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F5D020;}
+</style>
+<g id="XMLID_2_">
+	<path id="XMLID_8_" class="st0" d="M84.6,0.5H15.4c-0.5,0-1,0.5-1,1v97c0,0.5,0.5,1,1,1h69.1c0.5,0,1-0.5,1-1v-97
+		C85.6,1,85.1,0.5,84.6,0.5z M82.4,95.2c0,0.5-0.5,1-1,1H17.9c-0.5,0-1-0.5-1-1l0.7-90c0-0.5,0.5-1,1-1h62.8c0.5,0,1,0.5,1,1V95.2z"
+		/>
+	<path id="XMLID_7_" class="st0" d="M56.1,10.5H44c-1,0-1.8-0.8-1.8-1.7v0C42.2,7.8,43,7,44,7h12.1c1,0,1.8,0.8,1.8,1.7v0
+		C57.9,9.7,57.1,10.5,56.1,10.5z"/>
+	<circle id="XMLID_6_" class="st0" cx="50" cy="88.3" r="4.5"/>
+	<path id="XMLID_3_" class="st0" d="M74.8,13.6H25.2c-0.4,0-0.7,0.3-0.7,0.7v64c0,0.4,0.3,0.7,0.7,0.7h49.6c0.4,0,0.7-0.3,0.7-0.7
+		v-64C75.5,13.9,75.2,13.6,74.8,13.6z M73.9,76.5c0,0.4-0.3,0.7-0.7,0.7H26.8c-0.4,0-0.7-0.3-0.7-0.7V16c0-0.4,0.3-0.7,0.7-0.7h46.4
+		c0.4,0,0.7,0.3,0.7,0.7V76.5z"/>
+</g>
+</svg>
