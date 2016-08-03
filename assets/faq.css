@@ -1,19 +1,34 @@
 .faq-page {
     background-color: #f8f9fd;
 }
+.img-for-pc {
+    display: block;
+}
+.img-for-m {
+    display: none;
+}
 .section-faq {
     padding-top: 79px;
     background-color: #f8f9fd;
     margin-bottom: 300px;
 }
-.img-for-pc {
-    display: block;
+.section-faq-header {
+    height: 320px;
+    width: 100%;
+    background-color: #ffd102;
     position: relative;
 }
-.img-for-pc>div {
-    width: 980px;
+.section-faq-header img {
+    position: absolute;
+    height: 180px;
     margin: auto;
-    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.help-title {
+    bottom: 150px !important;
+    height: 40px !important;
 }
 .section-faq-img {
     width: 100%;
@@ -37,7 +52,6 @@
 }
 .line-about {
     background-color: #f3f3f3;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     margin: 25px 0 10px 0;
@@ -54,7 +68,6 @@
     border-radius: 2px 0 0 2px;
 }
 .line-about-title {
-    -webkit-flex: 3;
     -ms-flex: 3;
         flex: 3;
     line-height: 80px;
@@ -63,7 +76,6 @@
     font-size: 18px;
 }
 .line-about-footer {
-    -webkit-flex: 0.4;
     -ms-flex: 0.4;
         flex: 0.4;
     line-height: 80px;
@@ -94,15 +106,15 @@
     border-bottom: 8px solid transparent;
 }
 @media screen and (max-width:600px) {
-    .section-faq {
-        padding-top: 0;
-        margin-bottom: 60px;
-    }
     .img-for-pc {
         display: none;
     }
-    .section-faq-img-m {
+    .img-for-m {
         display: block;
+    }
+    .section-faq {
+        padding-top: 0;
+        margin-bottom: 60px;
     }
     .section-faq-inner {
         width: 90%;
@@ -141,8 +153,21 @@
     }
     .line-about-info {
         font-size: 14px;
+        margin: 0;
     }
     .line-about-info h3 {
         font-size: 15px;
+    }
+    .section-faq-header img {
+        height: auto;
+        width: 100%;
+        bottom: 5px;
+    }
+    .help-title {
+        height: 30px !important;
+        bottom: 70px !important;
+    }
+    .section-faq-header {
+        height: 210px;
     }
 }

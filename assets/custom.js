@@ -46,3 +46,32 @@ function menuBlur() {
     floatMenu.style.display = "none";
     menuMask.style.display = "none";
 }
+
+
+var floatMenuPC = document.getElementById('float-menu-pc');
+
+function showUsPop() {
+    removeClass(floatMenuPC, 'slide-out');
+    addClass(floatMenuPC, 'slide');
+    floatMenuPC.style.display = "block";
+    // console.log("in::::::" + e.currentTarget);
+}
+
+function isMouseLeaveOrEnter(e, handler) {
+    if (e.type != 'mouseout' && e.type != 'mouseover') {
+        return false;
+    }
+    var reltg = e.relatedTarget ? e.relatedTarget : e.type == 'mouseout' ? e.toElement : e.fromElement;
+    while (reltg && reltg != handler)
+        reltg = reltg.parentNode;
+    return (reltg != handler);
+}
+
+function hideUsPop(e) {
+    removeClass(floatMenuPC, 'slide');
+    addClass(floatMenuPC, 'slide-out');
+    setTimeout(function() {
+        floatMenuPC.style.display = "none";
+        // console.log("out::::::" + e.currentTarget);
+    }, 500);
+}

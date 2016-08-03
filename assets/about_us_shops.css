@@ -1,9 +1,44 @@
+.menuson {
+    display: none;
+    right: 60px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menuson>div {
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+}
+.menuson>div>a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.menuson-active {
+    background-color: #ffd102 !important;
+    color: #000000 !important;
+}
 .about-page {
     background-color: #f8f9fd;
 }
 .img-for-pc {
     position: relative;
     display: block;
+    background-color: #ffd102;
+}
+.img-for-m {
+    position: relative;
+    display: none;
 }
 .img-for-pc>div {
     width: 980px;
@@ -17,7 +52,10 @@
 }
 .us-head-title {
     position: absolute;
-    bottom: 40px;
+    top: 50%;
+    left: 50%;
+    height: 120px;
+    transform: translate(-50%, -50%);
 }
 .us-head-img-m {
     width: 100%;
@@ -35,7 +73,6 @@
 .city-line {
     display: -ms-flexbox;
     display: flex;
-    display: -webkit-flex;
     display: -o-flex;
     display: -ms-flex;
     display: -moz-flex;
@@ -84,7 +121,6 @@
     border-radius: 5px;
     display: -ms-flexbox;
     display: flex;
-    display: -webkit-flex;
     display: -o-flex;
     display: -ms-flex;
     display: -moz-flex;
@@ -136,15 +172,29 @@
     color: #242424;
 }
 @media screen and (max-width:600px) {
+    .menuson {
+        display: -ms-flexbox;
+        display: flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+    }
+    .nav-bar-logo img {
+        display: none;
+    }
+    .second-title {
+        display: none;
+    }
     .us-head-img {
         display: none;
     }
+    .img-for-m {
+        display: block;
+    }
     .us-head-title {
         display: block !important;
-        width: 120px;
-        left: 20px;
-        top: 30%;
-        margin-top: 35%;
+        height: 27%;
+        top: 60%;
     }
     .us-head-img-m {
         display: block;

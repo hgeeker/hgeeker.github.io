@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>最新资讯</title>
+    <meta name="description" content="万物仓——万科物业旗下品牌，立志打造人文社区、优化生活空间，专注为个人、家庭、企业用户提供最便利、安全、私密的存储服务。">
+    <meta name="keywords" content="万物仓，自存仓，自助仓储，储物柜，储物盒，迷你仓">
+    <link rel="icon" href="./assets/images/favicon.ico" mce_href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" mce_href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/custom.css">
+    <link rel="stylesheet" href="./assets/about_us_news.css">
+</head>
+
+<body class="about-page">
+    <nav id="nav-header" class="nav-bar nav-bar-white">
+        <div class="nav-bar-inner">
+            <div class="nav-bar-logo"><img src="./assets/images/logo.svg" alt="logo" /><span class="second-title">万科物业旗下品牌</span>
+                <div class="menuson">
+                    <div>
+                        <a href="./about_us.html">公司简介</a>
+                    </div>
+                    <div>
+                        <a class="menuson-active" href="./about_us_news.html">最新资讯</a>
+                    </div>
+                    <div>
+                        <a href="./about_us_shops.html">全部门店</a>
+                    </div>
+                </div>
+                <div id="float-btn" onclick="toggleMenu()" class="nav-bar-float-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="float-menu" class="nav-bar-float-menu">
+                    <li><a href="./index.html">首页</a></li>
+                    <hr/>
+                    <li><a href="./about_vks.html">我们的产品</a></li>
+                    <hr/>
+                    <li><a href="./user-word.html">用户心声</a></li>
+                    <hr/>
+                    <li><a href="./about_us.html">关于我们</a></li>
+                    <hr/>
+                    <li><a href="./faq.html">帮助中心</a></li>
+                </ul>
+                <div id="menu-mask" ontouchend="menuBlur()" class="menu-mask"></div>
+            </div>
+
+            <ul class="nav-bar-tab nav-bar-tab-opposite">
+                <li class="tab-item-small"><a id="link-main" href="./index.html">首页</a></li>
+                <li class="tab-item-big"><a id="link-about-vks" href="./about_vks.html">我们的产品</a></li>
+                <li><a href="./user-word.html">用户心声</a></li>
+                <li onmouseover="if(isMouseLeaveOrEnter(event,this)) showUsPop()" onmouseout="if(isMouseLeaveOrEnter(event,this)) hideUsPop(event)"><a id="link-about-us" href="javascript:void(0)">关于我们</a>
+                    <ul id="float-menu-pc" class="nav-bar-float-menu-pc">
+                        <li><a href="./about_us.html">公司简介</a></li>
+                        <hr/>
+                        <li><a href="./about_us_news.html">最新资讯</a></li>
+                        <hr/>
+                        <li><a href="./about_us_shops.html">所有门店</a></li>
+                    </ul>
+                </li>
+                <li><a id="link-faq" href="./faq.html">帮助中心</a></li>
+                <li class="nav-bar-line nav-bar-line-opposite"></li>
+                <li class="tab-item-big"><img class="nav-bar-phone" src="./assets/images/phone.svg" alt="电话"></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section-title">
+        <img class="img-for-pc" src="./assets/images/zixun_02.png" alt="" />
+        <img class="img-for-m" src="./assets/images/zixun_m.png" />
+        <div class="section-inner section-inner-other">
+            <img class="section-title-main" src="./assets/images/zixun.svg" alt="" />
+        </div>
+    </section>
+    <section class="section-list">
+        <div class="section-inner">
+            <div class="section-list-info">
+                <img src="./assets/images/zhuye.svg" alt="" />最新资讯
+            </div>
+            <div id="section-article" class="section-article" style="margin-top:40px;"></div>
+    </section>
+    <a class="check-more" onclick="getMore()">
+        查看更多
+    </a>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-inner-address">
+                <img src="./assets/images/logo2.svg" alt="万物仓logo" />
+                <img class="footer-inner-address-back" src="./assets/images/map.png" alt="万物仓back" />
+                <span class="footer-line-v" style="margin-left: -20px;"></span>
+                <p class="line-one">福田区梅林路63号万科大厦</p>
+                <p class="line-two">中国&nbsp;<span style="font-size:20px;position:relative;top:2px;">&middot;</span>&nbsp;深圳</p>
+            </div>
+            <span class="footer-line-v"></span>
+            <div class="footer-inner-phone">
+                <p class="line-one">联系电话: </p>
+                <p class="line-two"><a class="phone-number" href="tel:4008889192">400-888-9192</a></p>
+            </div>
+            <span class="footer-line-v"></span>
+            <div class="footer-inner-email">
+                <p class="line-one">邮箱: </p>
+                <p class="line-two"><a href="mailto:wwc123@vanke.com">wwc123@vanke.com</a></p>
+            </div>
+            <span class="footer-line-v"></span>
+            <div class="footer-inner-service">
+                <p class="line-one">客服时间: </p>
+                <p class="line-two">9:00-5:30</p>
+            </div>
+        </div>
+        <div class="footer-inner2">
+            <div><a href="./index.html">首页</a></div>
+            <span></span>
+            <div><a href="./about_vks.html">我们的产品</a></div>
+            <span></span>
+            <div><a href="./faq.html">帮助中心</a></div>
+            <span></span>
+            <div><a href="./about_us.html#company" name="company">公司简介</a></div>
+            <span></span>
+            <!-- <div><a href="./about_us.html#team" name="team">我们的团队</a></div> -->
+            <div><a href="./about_us.html#concat" name="concat">联系我们</a></div>
+        </div>
+        <div class="footer-inner2-m">
+            <div>
+                <div><a href="./index.html">首页</a></div>
+                <span></span>
+                <div><a href="./about_vks.html">我们的产品</a></div>
+                <span></span>
+                <div><a href="./faq.html">帮助中心</a></div>
+            </div>
+            <div>
+                <div><a href="./about_us.html#company" name="company">公司简介</a></div>
+                <span></span>
+                <!-- <div><a href="./about_us.html#team" name="team">我们的团队</a></div> -->
+                <div><a href="./about_us.html#concat" name="concat">联系我们</a></div>
+            </div>
+        </div>
+        <div class="footer-code">
+            <img src="./assets/images/code.png" alt="二维码" />
+            <p>扫一扫关注微信公众号</p>
+        </div>
+        <div class="copy-right">
+            Copyright 2004-2016 深圳市万物仓仓储有限公司 版权所有
+        </div>
+    </footer>
+    <script src="//cdn.bootcss.com/jquery/3.0.0-rc1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/custom.js"></script>
+    <script type="text/javascript" src="./assets/about_us_news.js"></script>
+</body>
+
+</html>

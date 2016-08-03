@@ -18,7 +18,7 @@
     <div id="main-page">
         <nav class="nav-bar">
             <div class="nav-bar-inner">
-                <div class="nav-bar-logo"><img src="./assets/images/logo.svg" alt="logo" />
+                <div class="nav-bar-logo"><img src="./assets/images/logo.svg" alt="logo" /><span class="second-title">万科物业旗下品牌</span>
                     <div id="float-btn" onclick="toggleMenu()" class="nav-bar-float-btn">
                         <span></span>
                         <span></span>
@@ -29,9 +29,11 @@
                         <hr/>
                         <li><a href="./about_vks.html">我们的产品</a></li>
                         <hr/>
-                        <li><a href="./faq.html">常见问题</a></li>
+                        <li><a href="./user-word.html">用户心声</a></li>
                         <hr/>
                         <li><a href="./about_us.html">关于我们</a></li>
+                        <hr/>
+                        <li><a href="./faq.html">帮助中心</a></li>
                     </ul>
                     <div id="menu-mask" ontouchend="menuBlur()" class="menu-mask"></div>
                 </div>
@@ -39,8 +41,17 @@
                 <ul class="nav-bar-tab nav-bar-tab-opposite">
                     <li class="tab-item-small"><a id="link-main" href="./index.html">首页</a></li>
                     <li class="tab-item-big"><a id="link-about-vks" href="./about_vks.html">我们的产品</a></li>
-                    <li><a id="link-faq" href="./faq.html">常见问题</a></li>
-                    <li><a id="link-about-us" href="./about_us.html">关于我们</a></li>
+                    <li><a id="link-faq" href="./user-word.html">用户心声</a></li>
+                    <li id="link-about-us" onmouseover="if(isMouseLeaveOrEnter(event,this)) showUsPop()" onmouseout="if(isMouseLeaveOrEnter(event,this)) hideUsPop(event)"><a href="javascript:void(0)">关于我们</a>
+                        <ul id="float-menu-pc" class="nav-bar-float-menu-pc">
+                            <li><a href="./about_us.html">公司简介</a></li>
+                            <hr/>
+                            <li><a href="./about_us_news.html">最新资讯</a></li>
+                            <hr/>
+                            <li><a href="./about_us_shops.html">所有门店</a></li>
+                        </ul>
+                    </li>
+                    <li><a id="link-faq" href="./faq.html">帮助中心</a></li>
                     <li class="nav-bar-line nav-bar-line-opposite"></li>
                     <li class="tab-item-big"><img class="nav-bar-phone" src="./assets/images/phone.svg" alt="电话"></li>
                 </ul>
@@ -49,60 +60,13 @@
         <div class="swiper-container main-page">
             <div class="swiper-wrapper">
                 <div class="swiper-slide main-page-item item-one">
-                    <img id="title-id-one" class="main-title" src="./assets/images/title-page-one.png" alt="标题1" />
-                    <img onclick="showVideo()" class="main-play" src="./assets/images/bofang-da.svg" alt="播放">
-                    <a id="main-btn-id" href="./about_vks.html" class="main-button">我们的产品</a>
-                </div>
-                <div class="swiper-slide main-page-item item-two">
-                    <img id="title-id-two" class="main-title" src="./assets/images/title-page-two.png" />
-                </div>
-                <div class="swiper-slide main-page-item item-three">
-                    <img id="title-id-three" class="main-title" src="./assets/images/title-page-three.png" />
-                    <a id="main-btn-id" href="./about_vks.html" class="main-button main-button-mobile">我们的产品</a>
+                    <img id="title-id-one" class="main-title" src="./assets/images/shenghuokongjian.svg" alt="标题1" />
+                    <a id="main-btn-id" href="./about_vks.html" class="main-button">了解更多产品</a>
+                    <a href="./about_vks.html" class="main-button main-button-mobile">了解更多产品</a>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <img id="mouse-icon" class="mouse-icon" src="./assets/images/subiaottishi.svg" alt="下一页" />
-        <div id="bottom-arrow" class="bottom-arrow">
-            <span class="bottom-arrow-left"></span>
-            <span class="bottom-arrow-right"></span>
-        </div>
-        <footer class="main-footer">
-            <div class="main-footer-inner">
-                <div>
-                    <img src="./assets/images/pinpai.svg" />
-                    <span>有情怀的品牌</span>
-                </div>
-                <div>
-                    <img src="./assets/images/fuwu.svg" />
-                    <span>全方位服务</span>
-                </div>
-                <div>
-                    <img src="./assets/images/yunying.svg" />
-                    <span>专业的运营</span>
-                </div>
-                <div>
-                    <img src="./assets/images/xuqiu.svg" />
-                    <span>满足您不同需求</span>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <div id="main-mask" class="mask">
-        <div class="mask-inner">
-            <img onclick="hideVideo()" src="" />
-            <video src="" autoplay poster="">
-
-            </video>
         </div>
     </div>
-    <!-- firefox svg blurring trick -->
-    <svg id="svg-image-blur">
-        <filter id="blur-effect">
-            <feGaussianBlur stdDeviation="10" />
-        </filter>
-    </svg>
 </body>
 <script src="//cdn.bootcss.com/Swiper/3.3.1/js/swiper.min.js"></script>
 <script type="text/javascript" src="./assets/custom.js"></script>

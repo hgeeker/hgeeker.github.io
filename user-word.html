@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>用户心声</title>
+    <meta name="description" content="万物仓——万科物业旗下品牌，立志打造人文社区、优化生活空间，专注为个人、家庭、企业用户提供最便利、安全、私密的存储服务。">
+    <meta name="keywords" content="万物仓，自存仓，自助仓储，储物柜，储物盒，迷你仓">
+    <link rel="icon" href="./assets/images/favicon.ico" mce_href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" mce_href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/custom.css">
+    <link rel="stylesheet" href="./assets/user-word.css">
+</head>
+
+<body class="about-page">
+    <nav id="nav-header" class="nav-bar nav-bar-white">
+        <div class="nav-bar-inner">
+            <div class="nav-bar-logo"><img src="./assets/images/logo.svg" alt="logo" /><span class="second-title">万科物业旗下品牌</span>
+                <div id="float-btn" onclick="toggleMenu()" class="nav-bar-float-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="float-menu" class="nav-bar-float-menu">
+                    <li><a href="./index.html">首页</a></li>
+                    <hr/>
+                    <li><a href="./about_vks.html">我们的产品</a></li>
+                    <hr/>
+                    <li><a href="./user-word.html">用户心声</a></li>
+                    <hr/>
+                    <li><a href="./about_us.html">关于我们</a></li>
+                    <hr/>
+                    <li><a href="./faq.html">帮助中心</a></li>
+                </ul>
+                <div id="menu-mask" ontouchend="menuBlur()" class="menu-mask"></div>
+            </div>
+            <ul class="nav-bar-tab nav-bar-tab-opposite">
+                <li class="tab-item-small"><a id="link-main" href="./index.html">首页</a></li>
+                <li class="tab-item-big"><a id="link-about-vks" href="./about_vks.html">我们的产品</a></li>
+                <li><a id="link-about-user" href="./user-word.html">用户心声</a></li>
+                <li id="link-about-us" onmouseover="if(isMouseLeaveOrEnter(event,this)) showUsPop()" onmouseout="if(isMouseLeaveOrEnter(event,this)) hideUsPop(event)"><a href="javascript:void(0)">关于我们</a>
+                    <ul id="float-menu-pc" class="nav-bar-float-menu-pc">
+                        <li><a href="./about_us.html">公司简介</a></li>
+                        <hr/>
+                        <li><a href="./about_us_news.html">最新资讯</a></li>
+                        <hr/>
+                        <li><a href="./about_us_shops.html">所有门店</a></li>
+                    </ul>
+                </li>
+                <li><a id="link-faq" href="./faq.html">帮助中心</a></li>
+                <li class="nav-bar-line nav-bar-line-opposite"></li>
+                <li class="tab-item-big"><img class="nav-bar-phone" src="./assets/images/phone.svg" alt="电话"></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section-user-one">
+        <img class="section-user-one-back" src="./assets/images/xinsheng.png" alt="" />
+        <img class="section-user-one-back-m" src="./assets/images/xinsheng_m.png" alt="" />
+        <div class="section-inner-two">
+            <img class="section-user-one-text" src="./assets/images/xinsheng2.svg" alt="" />
+        </div>
+    </section>
+    <div id="mask-mask" style="position:fixed;z-index:1;top:0;bottom:0;left:0;right:0;background-color:rgba(0,0,0,0);" onclick="userClick(-1)">
+
+    </div>
+    <section class="section-user-grid">
+        <div id="inner-mask1" class="inner-mask" style="top:0;left:0;">
+            <div>
+                <h4>张小姐</h4>
+                <p class="inner-mask-title">淘宝电商<span>租用大仓</span></p>
+                <p>
+                    我是一个淘宝电商，主要做韩国化妆品代购的。刚开始的时候货品都堆在家里面，家人也都能忍受。随着淘宝生意越做越多，家里已经堆不下货品了，刚好小区楼下有万物仓，可算帮我解决了大问题。要发货时就去楼下小仓库，随时存取非常方便。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask2" class="inner-mask" style="top:0;left:12.5%;">
+            <div>
+                <h4>James</h4>
+                <p class="inner-mask-title">外企高管<span>租用中仓</span></p>
+                <p>
+                    我和自存仓非常有缘分，之前在伦敦的时候就经常使用。被外派到中国后，虽然租了一个大房子，但是家里有三个宝宝，东西很多。所以我刚来中国就到处打听中国是否有自存仓，多方比较后最终选择了万物仓。如今使用万物仓已有3年时间了，对我而言使用自存仓已经变成一种生活方式。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask3" class="inner-mask" style="top:0;left:25%;">
+            <div>
+                <h4>何先生</h4>
+                <p class="inner-mask-title">程序猿<span>租用小仓</span></p>
+                <p>
+                    我是一家公司的程序猿，业余生活中是个资深的游戏迷。家里囤了一堆游戏机。因为游戏机太多了，经常和女朋友因为游戏机没地放而争吵。最后有朋友给我推荐了万物仓。我不仅给自己的宝贝找了个家，和女朋友的感情也更好了。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask4" class="inner-mask" style="top:0;left:37.5%;">
+            <div>
+                <h4>陈小姐</h4>
+                <p class="inner-mask-title">公司白领<span>租用小仓</span></p>
+                <p>
+                    我来深圳已经5年了，如今已经爱上了这座城市。大学毕业时自己还没找到心仪的工作、也没租房子。自己蹭在朋友家，但是行李没地放。就在这节骨眼上，上网一查才知道原来万物仓提供个人物品存储。万物仓不仅解决了我的燃眉之急，也让我可以恣意买买买。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask5" class="inner-mask" style="top:0;left:50%;">
+            <div>
+                <h4>葛小姐</h4>
+                <p class="inner-mask-title">摄影爱好者<span>租用中仓</span></p>
+                <p>
+                    我对生活品质崇尚断舍离。但是有些东西我还是不舍得扔，如孩子成长过程中积攒的各种玩具。每每看到这些东西、回忆起当年的情景是特别幸福。在万物仓来到我们小区后，我把这些宝贝全都挪到了万物仓，等我们老了、孩子长大了，把这些东西送给他们，他们一定倍感惊喜吧。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask6" class="inner-mask" style="top:0;left:62.5%;">
+            <div>
+                <h4>冯先生</h4>
+                <p class="inner-mask-title">企业白领<span>租用中仓</span></p>
+                <p>
+                    我是一名运动达人，平时喜欢各种运动。这些器材都堆放在家里，搞得家里乱糟糟的，老婆经常抱怨。半年前她没和我商量直接就租了万物仓，刚开始我还赌气觉得放楼下不方便。用下来发现这个决定实在太明智了，我开车下班后直接去旁边的万物仓换运动衣、取器材，非常方便。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask7" class="inner-mask" style="top:0;left:75%;">
+            <div>
+                <h4>姚先生</h4>
+                <p class="inner-mask-title">企业高管<span>租用小仓</span></p>
+                <p>
+                    我工作中很严肃，在业余时间又是一个音乐疯子。家里的磁带、乐器已经堆满了房间。深圳每年都有回南天，乐器容易受潮，为此我很无奈。直到发现面向个人存储的万物仓，恒温恒湿和24小时监控，完全不用担心物品受潮和丢失。简直是为我量身定制的，我会一直用下去。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask8" class="inner-mask" style="top:0;left:87.5%;">
+            <div>
+                <h4>何先生</h4>
+                <p class="inner-mask-title">金融从业者<span>租用中仓</span></p>
+                <p>
+                    我是个金融男，除了每天的日常工作外，还要花费心力忙活我的小爱好——足球、乐器、油画等。不知不觉，足球杂志、乐器、油画作品、已经堆满整个书房。当我了解到小区楼下有万物仓可以存储，立马把书房的东西全都搬到了楼下。现在房价这么贵，租个万物仓多出一间房，非常划算。
+                </p>
+            </div>
+        </div>
+        <ul>
+            <li style="margin-top:0;">
+                <div onclick="userClick(0)" class="small-mask"></div><img src="./assets/images/a001.jpg" alt="" /></li>
+            <li style="margin-top:0;">
+                <div onclick="userClick(1)" class="small-mask"></div><img src="./assets/images/a002.jpg" alt="" /></li>
+            <li style="margin-top:0;">
+                <div onclick="userClick(2)" class="small-mask"></div><img src="./assets/images/a003.jpg" alt="" /></li>
+            <li style="margin-top:0;">
+                <div onclick="userClick(3)" class="small-mask"></div><img src="./assets/images/a004.jpg" alt="" /></li>
+            <li style="margin-top:0;">
+                <div onclick="userClick(4)" class="small-mask"></div><img src="./assets/images/a005.jpg" alt="" /></li>
+            <li style="margin-top:0;">
+                <div onclick="userClick(5)" class="small-mask"></div><img src="./assets/images/a006.jpg" alt="" /></li>
+            <li style="margin-top:0;">
+                <div onclick="userClick(6)" class="small-mask"></div><img src="./assets/images/a007.jpg" alt="" /></li>
+            <li style="margin-top:0;">
+                <div onclick="userClick(7)" class="small-mask"></div><img src="./assets/images/a008.jpg" alt="" /></li>
+        </ul>
+        <ul>
+            <li>
+                <div onclick="userClick(8)" class="small-mask"></div><img src="./assets/images/a009.jpg" alt="" /></li>
+            <li>
+                <div onclick="userClick(9)" class="small-mask"></div><img src="./assets/images/a010.jpg" alt="" /></li>
+            <li>
+                <div onclick="userClick(10)" class="small-mask"></div><img src="./assets/images/a011.jpg" alt="" /></li>
+            <li>
+                <div onclick="userClick(11)" class="small-mask"></div><img src="./assets/images/a012.jpg" alt="" /></li>
+            <li>
+                <div onclick="userClick(12)" class="small-mask"></div><img src="./assets/images/a013.jpg" alt="" /></li>
+            <li>
+                <div onclick="userClick(13)" class="small-mask"></div><img src="./assets/images/a014.jpg" alt="" /></li>
+            <li>
+                <div onclick="userClick(14)" class="small-mask"></div><img src="./assets/images/a015.jpg" alt="" /></li>
+            <li>
+                <div onclick="userClick(15)" class="small-mask"></div><img src="./assets/images/a016.jpg" alt="" /></li>
+        </ul>
+        <div id="inner-mask9" class="inner-mask" style="bottom:33.3333%;left:0;">
+            <div>
+                <h4>邓小姐</h4>
+                <p class="inner-mask-title">全职太太<span>租用大仓</span></p>
+                <p>
+                    最近家里要装修，装修公司和设计师都谈好了，最发愁的是装修期间家具放什么地方。因为房子是二次装修，家里的家具又比较贵重，不舍得丢掉。老公的同事给我们推荐了万物仓，我去看仓后当场就定了下来。没想到万物仓里面还有空调、除湿机和24小时实时监控，等装修结束后还会考虑长期使用。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask10" class="inner-mask" style="bottom:33.3333%;left:12.5%;">
+            <div>
+                <h4>丁小姐</h4>
+                <p class="inner-mask-title">广告公司白领<span>租用大仓</span></p>
+                <p>
+                    我们公司是一家base在上海的4A广告公司，服务的客户都是世界500强的大公司。为了确保服务品质，我们采购了各种类型的桁架、展架、摄影设备等。这些设备对存储湿度和安全性有严格的要求，经过严格的筛选，最终选定万物仓来存放。万物仓是万科物业旗下品牌，相信它的服务品质。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask11" class="inner-mask" style="bottom:33.3333%;left:25%;">
+            <div>
+                <h4>林小姐</h4>
+                <p class="inner-mask-title">自由撰稿人<span>租用中仓</span></p>
+                <p>
+                    我喜欢自由自在的生活，人和心总有一个在路上。由于职业的关系，我可以自由支配时间，喜欢去不同地方转转，旅行中寻找创造灵感。人可以很潇洒，但是旅行期间贵重物品放家里还是让人不放心。自从使用了万物仓，可以随时来一场说走就走的旅行了。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask12" class="inner-mask" style="bottom:33.3333%;left:37.5%;">
+            <div>
+                <h4>赵小姐</h4>
+                <p class="inner-mask-title">平面设计<span>租用万物柜</span></p>
+                <p>
+                    作为一名资深设计湿，家里囤了一堆广告狗该看的书，平铺起来应该能绕地球一圈吧，哈哈~不懂收拾的我，在外是女神，回家是女汉子。自从租用了小区的万物仓，家里变得整洁好多。楼上生活，楼下存储，生活好Fashion！
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask13" class="inner-mask" style="bottom:33.3333%;left:50%;">
+            <div>
+                <h4>杨小姐</h4>
+                <p class="inner-mask-title">全职太太<span>租用中仓</span></p>
+                <p>
+                    自从生了小宝宝，家里的东西就开始呈几何级地增长，宝宝长太快，刚买的东西马上就用不了了，但是这些东西对我们很有纪念意义，还是不舍得扔掉。知道小区楼下有万物仓之后，我和老公果断租了下来。智能除湿、24小时监控，值得信赖。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask14" class="inner-mask" style="bottom:33.3333%;left:62.5%;">
+            <div>
+                <h4>何先生</h4>
+                <p class="inner-mask-title">IT<span>租用大仓</span></p>
+                <p>
+                    我们公司是做硬件开发的，很多硬件产品对放置环境有要求，必须要除湿防潮。万物仓恒温恒湿，很符合我们的要求，因此公司签订了两年的合同。使用万物仓，节约了防潮箱的费用，性价比很高。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask15" class="inner-mask" style="bottom:33.3333%;left:75%;">
+            <div>
+                <h4>徐小姐</h4>
+                <p class="inner-mask-title">公司白领<span>租用大仓</span></p>
+                <p>
+                    由于公司人事调动，我从南京来到了深圳。被迫只能把南京的新房租出去，但是家具却不舍得给租客用。再三考虑后，我准备把家具暂时存起来。之所以选择万物仓，主要是相信万科的服务品质。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask16" class="inner-mask" style="bottom:33.3333%;left:87.5%;">
+            <div>
+                <h4>刘先生</h4>
+                <p class="inner-mask-title">公司白领<span>租用小仓</span></p>
+                <p>
+                    我生活中算是比较宠女朋友，每一个特别的日子我都会给她送各种小礼物。久而久之家里堆满了各种礼物，这些物件是爱的象征，我们始终不舍得扔掉。偶然的机会看到了万物仓的海报，果断租了个小仓，为爱守护。
+                </p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <div onclick="userClick(16)" class="small-mask"></div><img src="./assets/images/a017.jpg" alt="" /></li>
+            <li>
+                <div onclick="userClick(17)" class="small-mask"></div><img src="./assets/images/a018.jpg" alt="" /></li>
+            <li>
+                <div onclick="userClick(18)" class="small-mask"></div><img src="./assets/images/a019.jpg" alt="" /></li>
+            <li>
+                <div onclick="userClick(19)" class="small-mask"></div><img src="./assets/images/a020.jpg" alt="" /></li>
+            <li>
+                <div onclick="userClick(20)" class="small-mask"></div><img src="./assets/images/a021.jpg" alt="" /></li>
+            <li>
+                <div onclick="userClick(21)" class="small-mask"></div><img src="./assets/images/a022.jpg" alt="" /></li>
+            <li>
+                <div onclick="userClick(22)" class="small-mask"></div><img src="./assets/images/a023.jpg" alt="" /></li>
+            <li>
+                <div onclick="userClick(23)" class="small-mask"></div><img src="./assets/images/a024.jpg" alt="" /></li>
+        </ul>
+        <div id="inner-mask17" class="inner-mask" style="bottom:0;left:0;">
+            <div>
+                <h4>李小姐</h4>
+                <p class="inner-mask-title">平面模特<span>租用小仓</span></p>
+                <p>
+                    由于职业的关系，我有各种款式的鞋子，最夸张的时候我有300多双鞋子。我一直是租房子，如何保养和存放这些鞋子让我犯了难。最后房东给我推荐了楼下的万物仓，我现在大部分鞋子都整齐地摆放在万物仓的货架上，生活空间宽敞了很多。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask18" class="inner-mask" style="bottom:0;left:12.5%;">
+            <div>
+                <h4>王先生</h4>
+                <p class="inner-mask-title">退休干部<span>租用中仓</span></p>
+                <p>
+                    从退休后，我就一直靠画国画、写毛笔字来消遣日子。回南天的时候整个房间非常潮湿，这些字画都晕花了，我很是心疼。最后老伴发现了楼下的万物仓，智能除湿的存储条件让我很满意，而且随时存取非常便捷。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask19" class="inner-mask" style="bottom:0;left:25%;">
+            <div>
+                <h4>任先生</h4>
+                <p class="inner-mask-title">退休工人<span>租用大仓</span></p>
+                <p>
+                    人年龄越大，越对家里的物件有感情，什么都不舍得扔掉。儿子非常孝顺，怕家里东西太多容易绊倒，专门给我租了个智能小仓库。现在家里非常宽敞，想什么东西了就坐电梯去楼下看看，非常方便。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask20" class="inner-mask" style="bottom:0;left:37.5%;">
+            <div>
+                <h4>温先生</h4>
+                <p class="inner-mask-title">公司高管<span>租用中仓</span></p>
+                <p>
+                    我和老婆都非常喜欢运动，对我们而言运动是最好的施压方式。自从小区有了万物仓，我们把家里的自行车、踢球装备、健身器材等都搬到了楼下。每次运动回来再也不用把运动设备搬到楼上了，感谢万物仓改善了我们的生活品质。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask21" class="inner-mask" style="bottom:0;left:50%;">
+            <div>
+                <h4>崔小姐</h4>
+                <p class="inner-mask-title">舞蹈老师<span>租用中仓</span></p>
+                <p>
+                    自己刚开始创业，租的舞蹈机构场地不是很大，但教学场地又要求比较高，所以给学员买的服装总是堆放在狭窄的角落，时间久了都有霉味了。一位学员给介绍了万物仓，门店经理带我看仓后我立马租了下来，仓库恒湿的条件简直是为我量身定做的。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask22" class="inner-mask" style="bottom:0;left:62.5%;">
+            <div>
+                <h4>刘先生</h4>
+                <p class="inner-mask-title">企业高管<span>租用大仓</span></p>
+                <p>
+                    前段时间把家里的房子租给了房客，我们家本来有全套的家具，但是租客却想用自己的家私。最终我们敲定的方案是一人出资一半把我家的家私存起来。刚好小区就有万物仓，恒温恒湿，不用担心家具发潮，我们对这个方案很满意。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask23" class="inner-mask" style="bottom:0;left:75%;">
+            <div>
+                <h4>李先生</h4>
+                <p class="inner-mask-title">工程师<span>租用万物柜</span></p>
+                <p>
+                    受职业的影响，我爱上了画图，我的目标是保存我画的每张图。从大学画的第一张工程图开始计算，现在我画了将近1000幅工程图纸。自己租的房子比较小，所以我就租了楼下的一个万物柜。爱好生活两不误，感谢万物仓。
+                </p>
+            </div>
+        </div>
+        <div id="inner-mask24" class="inner-mask" style="bottom:0;left:87.5%;">
+            <div>
+                <h4>张小姐</h4>
+                <p class="inner-mask-title">空姐<span>租用小仓</span></p>
+                <p>
+                    我的生活总是在空中飞来飞去，真正在家的时间很短。我是和别人一起合租的房子，把贵重的物品放在家里面我总是不放心。经过好友的推荐，我把家里的电脑、Pad、名牌包包都放在了万物仓里面。24小时监控，丢失还有赔偿，我非常放心。
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section-user-desc" style="border-top:2px solid #000000;">
+        <div class="section-inner">
+            <img src="./assets/images/xinsheng.svg" alt="" />
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-inner-address">
+                <img src="./assets/images/logo2.svg" alt="万物仓logo" />
+                <img class="footer-inner-address-back" src="./assets/images/map.png" alt="万物仓back" />
+                <span class="footer-line-v" style="margin-left: -20px;"></span>
+                <p class="line-one">福田区梅林路63号万科大厦</p>
+                <p class="line-two">中国&nbsp;<span style="font-size:20px;position:relative;top:2px;">&middot;</span>&nbsp;深圳</p>
+            </div>
+            <span class="footer-line-v"></span>
+            <div class="footer-inner-phone">
+                <p class="line-one">联系电话: </p>
+                <p class="line-two"><a class="phone-number" href="tel:4008889192">400-888-9192</a></p>
+            </div>
+            <span class="footer-line-v"></span>
+            <div class="footer-inner-email">
+                <p class="line-one">邮箱: </p>
+                <p class="line-two"><a href="mailto:wwc123@vanke.com">wwc123@vanke.com</a></p>
+            </div>
+            <span class="footer-line-v"></span>
+            <div class="footer-inner-service">
+                <p class="line-one">客服时间: </p>
+                <p class="line-two">9:00-5:30</p>
+            </div>
+        </div>
+        <div class="footer-inner2">
+            <div><a href="./index.html">首页</a></div>
+            <span></span>
+            <div><a href="./about_vks.html">我们的产品</a></div>
+            <span></span>
+            <div><a href="./faq.html">帮助中心</a></div>
+            <span></span>
+            <div><a href="./about_us.html#company" name="company">公司简介</a></div>
+            <span></span>
+            <!-- <div><a href="./about_us.html#team" name="team">我们的团队</a></div> -->
+            <div><a href="./about_us.html#concat" name="concat">联系我们</a></div>
+        </div>
+        <div class="footer-inner2-m">
+            <div>
+                <div><a href="./index.html">首页</a></div>
+                <span></span>
+                <div><a href="./about_vks.html">我们的产品</a></div>
+                <span></span>
+                <div><a href="./faq.html">帮助中心</a></div>
+            </div>
+            <div>
+                <div><a href="./about_us.html#company" name="company">公司简介</a></div>
+                <span></span>
+                <!-- <div><a href="./about_us.html#team" name="team">我们的团队</a></div> -->
+                <div><a href="./about_us.html#concat" name="concat">联系我们</a></div>
+            </div>
+        </div>
+        <div class="footer-code">
+            <img src="./assets/images/code.png" alt="二维码" />
+            <p>扫一扫关注微信公众号</p>
+        </div>
+        <div class="copy-right">
+            Copyright 2004-2016 深圳市万物仓仓储有限公司 版权所有
+        </div>
+    </footer>
+    <script type="text/javascript" src="./assets/custom.js"></script>
+    <script type="text/javascript" src="./assets/user-word.js"></script>
+</body>
+
+</html>

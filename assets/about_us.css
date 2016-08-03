@@ -1,6 +1,40 @@
+.menuson {
+    display: none;
+    right: 60px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menuson>div {
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+}
+.menuson>div>a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.menuson-active {
+    background-color: #ffd102 !important;
+    color: #000000 !important;
+}
 .img-for-pc {
     position: relative;
     display: block;
+}
+.img-for-m {
+    position: relative;
+    display: none;
 }
 .us-head-img {
     display: block;
@@ -11,11 +45,11 @@
 .us-head-img-title {
     display: block;
     position: absolute;
-    bottom: 40px;
+    top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
+    height: 70px;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
 }
 .us-head-img-m {
     display: none;
@@ -26,9 +60,9 @@ section {
     position: relative;
 }
 .section-company {
-    height: 470px;
+    height: 510px;
     background-color: #ffffff;
-    padding: 46px 0 0 0;
+    padding: 66px 0 0 0;
 }
 .section-inner {
     width: 1002px;
@@ -44,12 +78,12 @@ section {
     font-size: 18px;
     color: #242424;
     font-weight: 600;
-    margin: 30px 0 10px 0;
+    margin: 70px 0 10px 0;
 }
 .section-inner p {
     font-size: 16px;
     color: #242424;
-    line-height: 25px;
+    line-height: 28px;
 }
 .section-inner hr {
     width: 110px;
@@ -100,7 +134,7 @@ section {
 }
 .section-concat {
     height: 610px;
-    background-color: #f8f9fd;
+    background-color: #ffffff;
     padding: 68px 0 0 0;
 }
 .section-concat-bottom-img {
@@ -124,7 +158,6 @@ section {
 .section-child-company {
     display: -ms-flexbox;
     display: flex;
-    display: -webkit-flex;
     display: -o-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -137,7 +170,16 @@ section {
     -moz-flex: 1;
     -ms-flex: 1;
 }
+.section-clild-company-big {
+    flex: 1.2 !important;
+    -webkit-flex: 1.2 !important;
+    -o-flex: 1.2 !important;
+    -moz-flex: 1.2 !important;
+    -ms-flex: 1.2 !important;
+}
 .section-child-company span {
+    position: relative;
+    top: 45px;
     width: 0;
     height: 130px;
     border: 0;
@@ -151,9 +193,324 @@ section {
     width: 125px !important;
     margin-bottom: 100px;
 }
+
+/** section eight start**/
+
+.section-eight {
+    background-image: url(./images/about_wwc_04.png);
+    background-repeat: no-repeat;
+    position: relative;
+    min-width: 1002px;
+}
+.section-eight-img {
+    width: 100%;
+    display: block;
+    width: 900px;
+    margin: auto;
+}
+.section-eight-img-m {
+    display: none;
+}
+.section-eight-title {
+    width: 100%;
+    min-width: 1002px;
+    display: block;
+}
+.city-map {
+    width: 900px;
+    min-width: 900px;
+    height: 468px;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0);
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    left: 50%;
+}
+.city-map span {
+    font-size: 13px;
+    display: inline-block;
+    color: #ffffff;
+    height: 8px;
+    width: 8px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #2a2a2a;
+    position: relative;
+    animation: fadeBlink cubic-bezier(0, 0, 0, 1) 1.2s infinite;
+    -webkit-animation: fadeBlink cubic-bezier(0, 0, 0, 1) 1.2s infinite;
+    -moz-animation: fadeBlink cubic-bezier(0, 0, 0, 1) 1.2s infinite;
+    -ms-animation: fadeBlink cubic-bezier(0, 0, 0, 1) 1.2s infinite;
+    -o-animation: fadeBlink cubic-bezier(0, 0, 0, 1) 1.2s infinite;
+}
+.city-map span hr {
+    height: 0;
+    border: 0;
+    border-top: 1px solid #2a2a2a;
+    position: relative;
+}
+.city-beijing {
+    top: 175px;
+    left: 565px;
+}
+.city-beijing:after {
+    content: "北京";
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+    border-radius: 2px;
+    top: -84px;
+    left: -56px;
+    background-color: #2a2a2a;
+}
+.city-beijing hr {
+    width: 70px;
+    top: -35px;
+    left: -38px;
+    transform: rotate(77deg);
+    -webkit-transform: rotate(77deg);
+    -moz-transform: rotate(77deg);
+    -ms-transform: rotate(77deg);
+    -o-transform: rotate(77deg);
+}
+.city-shanghai {
+    top: 250px;
+    left: 615px;
+}
+.city-shanghai:after {
+    content: "上海";
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+    border-radius: 2px;
+    top: -22px;
+    left: 152px;
+    background-color: #2a2a2a;
+}
+.city-shanghai hr {
+    width: 155px;
+    top: -3px;
+    left: 0;
+}
+.city-nanjing {
+    top: 240px;
+    left: 564px;
+}
+.city-nanjing:after {
+    content: "南京";
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+    border-radius: 2px;
+    top: -65px;
+    left: -103px;
+    background-color: #2a2a2a;
+}
+.city-nanjing hr {
+    width: 65px;
+    top: -21px;
+    left: -60px;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+}
+.city-suzhou {
+    top: 249px;
+    left: 559px;
+}
+.city-suzhou:after {
+    content: "苏州";
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+    border-radius: 2px;
+    top: -75px;
+    left: 50px;
+    background-color: #2a2a2a;
+}
+.city-suzhou hr {
+    width: 63px;
+    top: -30px;
+    left: -5px;
+    transform: rotate(149deg);
+    -webkit-transform: rotate(149deg);
+    -moz-transform: rotate(149deg);
+    -o-transform: rotate(149deg);
+    -ms-transform: rotate(149deg);
+}
+.city-hangzhou {
+    top: 263px;
+    left: 543px;
+}
+.city-hangzhou:after {
+    content: "杭州";
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+    border-radius: 2px;
+    top: 25px;
+    left: 90px;
+    background-color: #2a2a2a;
+}
+.city-hangzhou hr {
+    width: 100px;
+    top: 16px;
+    left: 0;
+    transform: rotate(24deg);
+    -webkit-transform: rotate(24deg);
+    -moz-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    -o-transform: rotate(24deg);
+}
+.city-wuhan {
+    top: 265px;
+    left: 500px;
+}
+.city-wuhan:after {
+    content: "武汉";
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+    border-radius: 2px;
+    top: 38px;
+    left: -234px;
+    background-color: #2a2a2a;
+}
+.city-wuhan hr {
+    width: 200px;
+    top: 21px;
+    left: -190px;
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+}
+.city-shenzhen {
+    top: 325px;
+    left: 558px;
+}
+.city-shenzhen:after {
+    content: "深圳";
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+    border-radius: 2px;
+    top: 7px;
+    left: 60px;
+    background-color: #2a2a2a;
+}
+.city-shenzhen hr {
+    width: 63px;
+    top: 6px;
+    left: 0;
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+.city-guangzhou {
+    top: 323px;
+    left: 533px;
+}
+.city-guangzhou:after {
+    content: "广州";
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+    border-radius: 2px;
+    top: 11px;
+    left: -95px;
+    background-color: #2a2a2a;
+}
+.city-guangzhou hr {
+    width: 70px;
+    top: 12px;
+    left: -65px;
+    transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+}
+@keyframes fadeBlink {
+    0% {
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+    60% {
+        box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 0 4px rgba(0, 0, 0, 0);
+    }
+}
+
+/** section eight end **/
+
+
+/** section seven start**/
+
+.section-seven {
+    padding: 74px 0 104px 0;
+    background-color: #f8f9fd;
+    min-width: 1002px;
+}
+.section-seven img {
+    margin: 100px auto 0 auto;
+    width: 95%;
+    min-width: 1002px;
+    max-width: 1480px;
+}
+.section-seven-pc {
+    display: block;
+}
+.section-seven-m {
+    display: none;
+}
+
+/** section seven end **/
+
 @media screen and (max-width:600px) {
+    .menuson {
+        display: -ms-flexbox;
+        display: flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+    }
+    .nav-bar-logo img {
+        display: none;
+    }
+    .second-title {
+        display: none;
+    }
     .img-for-pc {
         display: none;
+    }
+    .img-for-m {
+        display: block;
     }
     .us-head-img {
         display: none;
@@ -162,6 +519,10 @@ section {
         display: block;
         width: 100%;
         min-width: 320px;
+    }
+    .us-head-img-title {
+        height: 15%;
+        top: 60%;
     }
     .section-inner {
         min-width: 320px;
@@ -226,6 +587,7 @@ section {
         display: block;
     }
     .section-child-company span {
+        top: 0;
         width: 130px;
         height: 0;
         border: 0;
@@ -252,4 +614,44 @@ section {
         width: 100px !important;
         margin-bottom: 30px;
     }
+    .section-seven-pc {
+        display: none;
+    }
+    .section-seven-m {
+        display: block;
+    }
+    .section-eight {
+        min-width: 320px;
+    }
+    .section-eight img {
+        min-width: 320px;
+        width: 100%;
+    }
+    .section-eight-img {
+        display: none;
+    }
+    .section-eight-img-m {
+        display: block;
+    }
+    .section-eight-title {
+        display: none;
+    }
+    .city-map {
+        display: none;
+    }
+    .section-seven {
+        height: auto;
+        min-width: 320px;
+        padding: 30px 0;
+    }
+    .section-seven img {
+        min-width: 320px;
+        margin: 20px auto 0 auto;
+        height: auto;
+    }
+}
+@media screen and (max-width:320px) {
+  .section-inner p {
+      font-size: 12px;
+  }
 }

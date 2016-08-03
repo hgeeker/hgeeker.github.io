@@ -86,10 +86,10 @@ window.onscroll = function() {
     }
     header.style.backgroundColor = "rgba(255,255,255," + trans + ")";
     if (trans >= 0.9) {
-        header.style.boxShadow = "0 0 5px #e5e5e5";
+        header.style.boxShadow = "0 0 4px #868686";
         addClass(floatBtn, "float-btn-opp");
     } else {
-        header.style.boxShadow = "0 0 0 #e5e5e5";
+        header.style.boxShadow = "0 0 0 #868686";
         removeClass(floatBtn, "float-btn-opp");
     }
 }
