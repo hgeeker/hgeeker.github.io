@@ -48,12 +48,14 @@
     width: 1002px;
     min-width: 1002px;
     margin: auto;
+    min-height: 280px;
 }
 .section-inner-other {
     position: absolute;
     bottom: 10%;
     left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+    min-height: 0;
 }
 .section-list {
     padding: 40px 0 0 0;
@@ -113,9 +115,9 @@
 .item-footer {
     display: inline-block;
     height: 160px;
-    width: 530px;
+    width: 560px;
     position: absolute;
-    left: 470px;
+    left: 440px;
     padding: 20px;
     background-color: #fcfcfc;
     border: 1px solid #f1f1f1;
@@ -129,12 +131,14 @@
     font-size: 14px;
     height: 30px;
     color: #aeaeae;
+    margin-top: 4px;
 }
 .item-footer span {
     display: block;
     font-size: 16px;
     line-height: 24px;
-    color: #594f21;
+    color: #1a1a1a;
+    margin-top: 11px;
 }
 .item-footer span a {
     font-size: 16px;
@@ -151,7 +155,7 @@
     text-align: center;
     font-size: 14px;
     margin: 50px auto;
-    display: block;
+    display: none;
 }
 .check-more:hover {
     background-color: #ffd102;

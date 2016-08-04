@@ -54,7 +54,6 @@ function showUsPop() {
     removeClass(floatMenuPC, 'slide-out');
     addClass(floatMenuPC, 'slide');
     floatMenuPC.style.display = "block";
-    // console.log("in::::::" + e.currentTarget);
 }
 
 function isMouseLeaveOrEnter(e, handler) {
@@ -70,8 +69,4 @@ function isMouseLeaveOrEnter(e, handler) {
 function hideUsPop(e) {
     removeClass(floatMenuPC, 'slide');
     addClass(floatMenuPC, 'slide-out');
-    setTimeout(function() {
-        floatMenuPC.style.display = "none";
-        // console.log("out::::::" + e.currentTarget);
-    }, 500);
 }

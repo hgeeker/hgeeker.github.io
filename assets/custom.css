@@ -1,5 +1,5 @@
 html {
-    font-family: arial, "Hiragino Sans GB", "Microsoft Yahei", "Roboto", "微软雅黑", "宋体", Tahoma, Arial, Helvetica, STHeiti;
+    font-family: arial, "Hiragino Sans GB", "Microsoft Yahei", "Roboto", "微软雅黑", "宋体", Tahoma, Arial, Helvetica, STHeiti !important;
     /*font-family: "Microsoft Yahei";*/
     font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
