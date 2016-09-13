@@ -24,7 +24,7 @@ var checkDetail = function(id) {
     $('#section-detail').css('display', 'block');
 }
 var getList = function(size) {
-    $.get(baseUrl + "queryArticlesFromBKMgr?state=2&pageSize=" + size + "&curPage=1", function(data) {
+    $.get(baseUrl + "queryArticlesOpen?state=2&pageSize=" + size + "&curPage=1", function(data) {
         var list = data.data.data;
         for (var i = 0; i < list.length; i++) {
             if (list[i].readCount === null || list[i].readCount === "" || list[i].readCount < 0) {

@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>万物仓</title>
     <meta name="description" content="万物仓——万科物业旗下品牌，立志打造人文社区、优化生活空间，专注为个人、家庭、企业用户提供最便利、安全、私密的存储服务。">
     <meta name="keywords" content="万物仓，自存仓，自助仓储，储物柜，储物盒，迷你仓">
@@ -15,19 +16,17 @@
 </head>
 
 <body>
-    <div id="main-page">
-        <nav class="nav-bar">
+    <div class="main-page">
+        <nav id="nav-header" class="nav-bar" style="background-image:url('./assets/images/nav-bar-back.png');background-repeat:no-repeat;background-size:100% 100%;">
             <div class="nav-bar-inner">
-                <div class="nav-bar-logo"><img src="./assets/images/logo.svg" alt="logo" /><span class="second-title">万科物业旗下品牌</span>
-                    <div id="float-btn" onclick="toggleMenu()" class="nav-bar-float-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                <div class="nav-bar-logo"><img id="logo" src="./assets/images/logo-per.svg" alt="logo" /><span class="second-title" id="second-title">万科物业旗下品牌</span>
+                    <div id="float-btn" onclick="toggleMenu()" class="nav-bar-float-btn opp-outter">
+                        <span class="opp-outter"></span>
+                        <span class="opp-outter"></span>
+                        <span class="opp-outter"></span>
                     </div>
-                    <ul id="float-menu" class="nav-bar-float-menu">
+                    <ul id="float-menu" class="nav-bar-float-menu ">
                         <li><a href="./index.html">首页</a></li>
-                        <hr/>
-                        <li><a href="./about_vks.html">我们的产品</a></li>
                         <hr/>
                         <li><a href="./user-word.html">用户心声</a></li>
                         <hr/>
@@ -38,9 +37,8 @@
                     <div id="menu-mask" ontouchend="menuBlur()" class="menu-mask"></div>
                 </div>
 
-                <ul class="nav-bar-tab nav-bar-tab-opposite">
+                <ul id="nav-bar-tab" class="nav-bar-tab">
                     <li class="tab-item-small"><a id="link-main" href="./index.html">首页</a></li>
-                    <li class="tab-item-big"><a id="link-about-vks" href="./about_vks.html">我们的产品</a></li>
                     <li><a id="link-faq" href="./user-word.html">用户心声</a></li>
                     <li id="link-about-us" onmouseover="if(isMouseLeaveOrEnter) showUsPop()" onmouseout="if(isMouseLeaveOrEnter) hideUsPop(event)"><a href="javascript:void(0)">关于我们</a>
                         <ul id="float-menu-pc" class="nav-bar-float-menu-pc">
@@ -48,28 +46,269 @@
                             <hr/>
                             <li id="float-menu-pc-two"><a href="./about_us_news.html">最新资讯</a></li>
                             <!-- <hr/>
-                            <li id="float-menu-pc-three"><a href="./about_us_shops.html">所有门店</a></li> -->
+                        <li id="float-menu-pc-three"><a href="./about_us_shops.html">所有门店</a></li> -->
                         </ul>
                     </li>
                     <li><a id="link-faq" href="./faq.html">帮助中心</a></li>
-                    <li class="nav-bar-line nav-bar-line-opposite"></li>
-                    <li class="tab-item-big"><img class="nav-bar-phone" src="./assets/images/phone.svg" alt="电话"></li>
+                    <li class="nav-bar-line"></li>
+                    <li class="tab-item-big"><img id="phone" class="nav-bar-phone" src="./assets/images/phone2.svg" alt="电话"></li>
                 </ul>
             </div>
         </nav>
-        <div class="swiper-container main-page">
+        <div class="swiper-container">
+            <div class="swiper-button-prev only-pc"></div>
+            <div class="swiper-button-next only-pc"></div>
             <div class="swiper-wrapper">
-                <div class="swiper-slide main-page-item item-one">
-                    <img id="title-id-one" class="main-title" src="./assets/images/shenghuokongjian.svg" alt="标题1" />
-                    <a id="main-btn-id" href="./about_vks.html" class="main-button">了解更多产品</a>
-                    <a href="./about_vks.html" class="main-button main-button-mobile">了解更多产品</a>
+                <div class="swiper-slide">
+                    <img class="only-pc" src="./assets/images/banner1.png" alt="" />
+                    <img class="only-m" src="./assets/images/bannerm1.png" alt="" />
                 </div>
+                <div class="swiper-slide" style="background-color:#59a5f9">
+                    <img class="only-pc" src="./assets/images/banner3.png" alt="" />
+                    <img class="only-m" src="./assets/images/bannerm2.png" alt="" />
+                </div>
+                <div class="swiper-slide" style="background-color:#f3c700">
+                    <img class="only-pc" src="./assets/images/banner2.png" alt="" />
+                    <img class="only-m" src="./assets/images/bannerm3.png" alt="" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <section class="section-tips-bar">
+            <div class="main-inner">
+                <div>
+                    <h2><img class="tips-title" src="./assets/images/anquan.svg" alt="" /></h2>
+                    <p>24h监控、安全存储</p>
+                    <img class="tips-bar-pc" src="./assets/images/tips1.png" alt="" />
+                    <img class="tips-bar-m" src="./assets/images/tipsm1.png" alt="" />
+                </div>
+                <div>
+                    <h2><img class="tips-title" src="./assets/images/process.svg" alt="" /></h2>
+                    <p>智能除湿、防虫除尘</p>
+                    <img class="tips-bar-pc" src="./assets/images/tips2.png" alt="" />
+                    <img class="tips-bar-m" src="./assets/images/tipsm2.png" alt="" />
+                </div>
+                <div>
+                    <h2><img class="tips-title" src="./assets/images/zhineng.svg" alt="" /></h2>
+                    <p>微信开锁、智能下单</p>
+                    <img class="tips-bar-pc" src="./assets/images/tips3.png" alt="" />
+                    <img class="tips-bar-m" src="./assets/images/tipsm3.png" alt="" />
+                </div>
+                <div>
+                    <h2><img  class="tips-title" src="./assets/images/bianjie.svg" alt="" /></h2>
+                    <p>全程委托、不用动手</p>
+                    <img class="tips-bar-pc" src="./assets/images/tips4.png" alt="" />
+                    <img class="tips-bar-m" src="./assets/images/tipsm4.png" alt="" />
+                </div>
+            </div>
+        </section>
+        <section class="section-storage">
+            <div class="main-storage-inner">
+                <h4>万物仓，您身边的存储专家</h4>
+                <p class="only-pc">深圳市万物仓仓储有限公司成立于2013年，是万科物业旗下品牌。</p>
+                <p class="only-pc">公司秉承“生活空间多几方”的理念，专注为个人、家庭和企业用户</p>
+                <p class="only-pc">提供专业上门搬运和存储的一站式服务。</p>
+                <p class="only-m storage-content">
+                    深圳市万物仓仓储有限公司成立于2013年，</br>是万科物业旗下品牌。 公司秉承“生活空间多几方”的</br>理念，专注为个人、家庭和企业用户 提供专业</br>上门搬运和存储的一站式服务。
+                </p>
+                <img class="huge-storage-m only-m" src="./assets/images/huge_storage_m.png" alt="" />
+                <hr class="main-line" />
+                <h2 class="wpcc only-pc storage-padding-left">物品存储</h2>
+                <p class="only-pc  storage-padding-left" style="font-size:20px;">个人、家庭、企业，按需而存</p>
+                <img class="huge-storage" src="./assets/images/huge_storage.png" alt="" />
+                <img class="huge-storage-img only-pc" src="./assets/images/tan.svg" alt="" />
+                <div class="only-m move-m" style="position:relative;margin-bottom: 50px;">
+                    <img class="tan-for-m" src="./assets/images/tan-left.png" alt="" />
+                    <h2 class="wpcc" style="font-size:16px;">物品存储</h2>
+                    <p style="font-size:12px;">个人、家庭、企业，按需而存</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-show">
+            <div class="main-storage-inner" style="font-size:0;">
+                <span class="section-show-left">
+                  <img src="./assets/images/showImg1.png" alt="" />
+                  <img class="only-m" src="./assets/images/gridImgM1.png" alt="" />
+                  <p class="section-show-p">居家生活用品存储</p>
+              </span>
+                <span class="section-show-right">
+                  <img src="./assets/images/showImg2.png" alt="" />
+                  <img class="only-m" src="./assets/images/gridImgM2.png" alt="" />
+                  <p class="section-show-p section-show-p-right">企业办公文件存储</p>
+              </span>
+                <span class="section-show-left">
+                <img src="./assets/images/showImg3.png" alt="" />
+                <img class="only-m" src="./assets/images/gridImgM3.png" alt="" />
+                <p class="section-show-p">装修期间家私暂存</p>
+              </span>
+                <span class="section-show-right">
+                <img src="./assets/images/showImg4.png" alt="" />
+                <img class="only-m" src="./assets/images/gridImgM4.png" alt="" />
+                <p class="section-show-p section-show-p-right">房屋租赁家私存储</p>
+              </span>
+            </div>
+        </section>
+        <section id="section-show-2" class="section-show-2">
+            <div id="section-show2-inner" class="section-show2-inner">
+                <img src="./assets/images/show2Img1.png" alt="" />
+                <img src="./assets/images/show2Img2.png" alt="" />
+                <img src="./assets/images/show2Img3.png" alt="" />
+                <img src="./assets/images/show2Img4.png" alt="" />
+                <img class="only-pc" src="./assets/images/show2Img5.png" alt="" />
+            </div>
+        </section>
+        <section class="section-move">
+            <div class="main-storage-inner" style="height:190px;">
+                <img class="moveCar-img-m" style="position:absolute;" src="./assets/images/bangyun.png" alt="" />
+                <h2 class="gdby only-pc">高端搬运</h2>
+                <p class="only-pc" style="font-size:20px;">一站式搬运 + 专业存储</p>
+                <img class="op-tan only-pc" src="./assets/images/tan.svg" alt="" />
+                <div class="only-m move-m" style="position:relative;top:130px;">
+                    <img class="tan-for-m tan-for-m2" src="./assets/images/tan-right.png" alt="" />
+                    <h2 class="gdby" style="font-size:16px;">高端搬运</h2>
+                    <p style="font-size:12px;">一站式搬运 + 专业存储</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-grid">
+            <div class="section-grid-row">
+                <span class="row-img-left">
+                  <img src="./assets/images/gridImg1.png" alt="" />
+                  <p class="section-show-p section-show-p2">物品打包专业贴心</br>抗压防摔</p>
+                </span>
+                <span class="row-img-right">
+                  <img src="./assets/images/gridImg2.png" alt="" />
+                  <p class="section-show-p section-show-p2 section-show-p2-right">全程五星级服务</br>不用您动手</p>
+                </span>
+            </div>
+            <div class="section-grid-row">
+                <span class="row-img-left">
+                <img src="./assets/images/gridImg3.png" alt="" />
+                <p class="section-show-p section-show-p2">手机智能监控</br>物品动态一目了然</p>
+              </span>
+                <span class="row-img-right">
+                <img src="./assets/images/gridImg4.png" alt="" />
+                <p class="section-show-p section-show-p2 section-show-p2-right">贴心的搬家大使</br>一对一服务</p>
+              </span>
+            </div>
+        </section>
+        <section id="section-flow" class="section-flow">
+            <h1>服务流程</h1>
+            <img class="only-m flow-img-m" src="./assets/images/flowM.png" alt="" />
+            <div class="section-flow-outter">
+                <div class="section-flow-step1">
+                    <h4 class="step1-fade-out"><i>1</i>提交需求</h4>
+                    <p class="step1-fade-out">微信预约服务</p>
+                    <p class="step1-fade-out">或拨打400-888-9192</p>
+                    <span id="step1-h-line" class="step1-h-line"></span>
+                    <span id="step1-s-line" class="step1-s-line"></span>
+                </div>
+                <div class="section-flow-step2">
+                    <h4 class="step2-fade-out"><i>2</i>客服跟进</h4>
+                    <p class="step2-fade-out">了解客户需求，安排上门服务</p>
+                    <span id="step2-h-line" class="step2-h-line"></span>
+                    <span id="step2-s-line" class="step2-s-line"></span>
+                </div>
+                <div class="section-flow-step3">
+                    <h4 class="step3-fade-out"><i>3</i>专业搬运</h4>
+                    <p class="step3-fade-out">按需提供搬运，专业打包拆装</p>
+                    <span id="step3-h-line" class="step3-h-line"></span>
+                    <span id="step3-s-line" class="step3-s-line"></span>
+                </div>
+                <div class="section-flow-step4">
+                    <h4 class="step4-fade-out"><i>4</i>物品入仓</h4>
+                    <p class="step4-fade-out">智能除湿，24h监控，防虫除尘</p>
+                    <span id="step4-h-line" class="step4-h-line"></span>
+                    <span id="step4-s-line" class="step4-s-line"></span>
+                </div>
+                <div class="section-flow-step5">
+                    <h4 class="step5-fade-out"><i>5</i>按时送回</h4>
+                    <p class="step5-fade-out">提前通知客户，按原地址送回</p>
+                    <span id="step5-h-line" class="step5-h-line"></span>
+                    <span id="step5-s-line" class="step5-s-line"></span>
+                </div>
+                <img class="flow-circle" src="./assets/images/yuanquan.svg" alt="" />
+                <div class="section-flow-inner">
+                    <img src="./assets/images/logo.svg" alt="" />
+                    <p class="custome-service">客服热线</p>
+                    <img src="./assets/images/phone.svg" alt="" />
+                </div>
+            </div>
+            <p class="flow-concat">
+                如有搬运存储需求，请拨打万物仓客服热线
+                <a href="tel:400-888-9192" class="main-number">
+                    <img src="./assets/images/phone3.svg" alt="" />
+                </a><span>，客户大使会及时和您联系。</span>
+            </p>
+        </section>
+        <footer id="footer" class="footer">
+            <div class="footer-inner">
+                <div class="footer-inner-address">
+                    <img src="./assets/images/logo2.svg" alt="万物仓logo" />
+                    <img class="footer-inner-address-back" src="./assets/images/map.png" alt="万物仓back" />
+                    <span class="footer-line-v" style="margin-left: -20px;"></span>
+                    <p class="line-one">福田区梅林路63号万科大厦</p>
+                    <p class="line-two">中国&nbsp;<span style="font-size:20px;position:relative;top:2px;">&middot;</span>&nbsp;深圳</p>
+                </div>
+                <span class="footer-line-v"></span>
+                <div class="footer-inner-phone">
+                    <p class="line-one">联系电话: </p>
+                    <p class="line-two"><a class="phone-number" href="tel:4008889192">400-888-9192</a></p>
+                </div>
+                <span class="footer-line-v"></span>
+                <div class="footer-inner-email">
+                    <p class="line-one">邮箱: </p>
+                    <p class="line-two"><a href="mailto:wwc123@vanke.com">wwc123@vanke.com</a></p>
+                </div>
+                <span class="footer-line-v"></span>
+                <div class="footer-inner-service">
+                    <p class="line-one">客服时间: </p>
+                    <p class="line-two">9:00-5:30</p>
+                </div>
+            </div>
+            <div class="footer-inner2">
+                <div><a href="./index.html">首页</a></div>
+                <span></span>
+                <div><a href="./faq.html">帮助中心</a></div>
+                <span></span>
+                <div><a href="./about_us.html#company" name="company">公司简介</a></div>
+                <span></span>
+                <!-- <div><a href="./about_us.html#team" name="team">我们的团队</a></div> -->
+                <div><a href="./about_us.html#concat" name="concat">联系我们</a></div>
+            </div>
+            <div class="footer-inner2-m">
+                <div>
+                    <div><a href="./index.html">首页</a></div>
+                    <span></span>
+                    <div><a href="./faq.html">帮助中心</a></div>
+                </div>
+                <div>
+                    <div><a href="./about_us.html#company" name="company">公司简介</a></div>
+                    <span></span>
+                    <!-- <div><a href="./about_us.html#team" name="team">我们的团队</a></div> -->
+                    <div><a href="./about_us.html#concat" name="concat">联系我们</a></div>
+                </div>
+            </div>
+            <div class="footer-code">
+                <img src="./assets/images/code.png" alt="二维码" />
+                <p>扫一扫关注微信公众号</p>
+            </div>
+            <div class="copy-right">
+                Copyright 2004-2016 深圳市万物仓仓储有限公司 版权所有
+            </div>
+        </footer>
+        <div id="qrcode-float" class="qrcode-float">
+            <div>
+                <img src="./assets/images/code.png" alt="" />
+                <p>
+                    扫码关注万物仓公众号
+                </p>
             </div>
         </div>
     </div>
+    <script src="//cdn.bootcss.com/Swiper/3.3.1/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./assets/custom.min.js"></script>
+    <script type="text/javascript" src="./assets/main.min.js"></script>
 </body>
-<script src="//cdn.bootcss.com/Swiper/3.3.1/js/swiper.min.js"></script>
-<script type="text/javascript" src="./assets/custom.min.js"></script>
-<script type="text/javascript" src="./assets/main.min.js"></script>
 
 </html>

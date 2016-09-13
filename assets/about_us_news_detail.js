@@ -26,7 +26,7 @@ $(document).ready(function() {
     var a3 = document.getElementById('link-about-us');
     addClass(a3, 'nav-bar-item-line-op');
     var id = getUrlParam('id');
-    $.get(baseUrl + "getArticleFromBKMgr?id=" + id, function(data) {
+    $.get(baseUrl + "getArticleOpen?id=" + id, function(data) {
         $('.year').html(data.data.createDate.slice(0, 4));
         $('.date').html(data.data.createDate.slice(5, 10));
         $('.title').html(data.data.title);
@@ -36,7 +36,7 @@ $(document).ready(function() {
         $('.editer').html("发布者：" + data.data.publisher + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浏览次数：" + data.data.readCount);
         $('#content').html(data.data.content);
     }, "json");
-    $.get(baseUrl + "addReadCountsFromBKMgr?id=" + id + "&count=1", function(data) {
+    $.get(baseUrl + "addReadCountsOpen?id=" + id + "&count=1", function(data) {
         console.log(data);
     }, "json");
 });
