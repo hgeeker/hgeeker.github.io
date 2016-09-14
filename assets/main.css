@@ -70,6 +70,7 @@
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    transform: translateX(30px);
 }
 
 .main-inner::before {
@@ -305,7 +306,7 @@
 
 .section-flow {
     text-align: center;
-    background-image: url('./images/flowBack.png');
+    background-image: url('./images/flowBack.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -336,6 +337,7 @@
     top: 330px;
     left: 49%;
     transform: translateX(-50%);
+    height: 128px;
 }
 
 
@@ -823,6 +825,7 @@
 
 .section-flow-inner img {
     width: 200px;
+    height: auto;
 }
 
 .flow-concat {
@@ -915,6 +918,7 @@
     .main-inner {
         min-width: 320px;
         width: 100%;
+        transform: translateX(0);
     }
     .main-inner::before {
         display: none;

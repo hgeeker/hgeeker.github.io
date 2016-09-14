@@ -2,9 +2,11 @@ var mySwiper = new Swiper('.swiper-container', {
     prevButton: '.swiper-button-prev',
     nextButton: '.swiper-button-next',
     pagination: '.swiper-pagination',
+    paginationClickable :true,
     resistanceRatio: 0,
     loop: true,
-    autoplay: 8000,
+    autoplay: 5000,
+    autoplayDisableOnInteraction: false,
 });
 window.onload = function() {
     var a1 = document.getElementById('link-main');
