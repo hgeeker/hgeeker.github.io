@@ -834,3 +834,9 @@ footer a, a:hover, a:link, a:active, a:visited {
         padding-left: 140px;
     }
 }
+
+.ba-code {
+    font-size: 12px;
+    text-align: center;
+    color: #737373;
+}
